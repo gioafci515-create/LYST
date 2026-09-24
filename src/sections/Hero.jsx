@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
+import UnderlineLink from "../components/UnderlineLink";
 
 const MotionLink = motion(Link);
 
@@ -29,16 +30,7 @@ export default function Hero() {
             >
               {t("hero.ctaPrimary")}
             </MotionLink>
-            <MotionLink
-              to="/how-it-works"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className="group flex items-center gap-2 text-[15px] font-semibold text-black"
-            >
-              {t("hero.ctaSecondary")}
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </MotionLink>
+            <UnderlineLink to="/how-it-works" label={t("hero.ctaSecondary")} />
           </div>
         </Reveal>
         <Reveal direction="fade" delay={0.15}>

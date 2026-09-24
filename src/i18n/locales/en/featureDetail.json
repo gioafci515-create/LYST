@@ -1,0 +1,40 @@
+{
+  "cta": "Create an invitation",
+  "backToFeatures": "All features",
+  "eventCamera": {
+    "category": "Event Experience",
+    "title": "Event Camera",
+    "tagline": "Every guest — your photographer.",
+    "description": "During the event, guests take photos and videos straight from their phones through a digital disposable camera — no app download needed. Every shot lands in one shared gallery automatically.",
+    "highlights": [
+      { "title": "No app required", "body": "Guests just open a link in their phone's browser and start shooting." },
+      { "title": "Shared gallery", "body": "Every photo and video collects into one living gallery in real time." },
+      { "title": "Host control", "body": "Download, curate, and share the full collection after the event." }
+    ],
+    "imageAlt": "Guests taking photos with the event camera"
+  },
+  "voiceGuestbook": {
+    "category": "Event Experience",
+    "title": "Voice Guestbook",
+    "tagline": "A voice that still feels alive years later.",
+    "description": "Instead of writing, guests leave voice toasts and heartfelt words straight from their phones. The tone, the laughter, the emotion — all captured exactly as it was.",
+    "highlights": [
+      { "title": "Record in one tap", "body": "Guests tap a button, leave a message, and send it — in under 30 seconds." },
+      { "title": "Organized archive", "body": "Every voice message is sorted by name and time." },
+      { "title": "A memory to revisit", "body": "Hosts can listen back later or share it with loved ones." }
+    ],
+    "imageAlt": "A guest leaving a voice message on their phone"
+  },
+  "lettersFromTheRoom": {
+    "category": "Event Experience",
+    "title": "Letters From the Room",
+    "tagline": "Words you'll read again later.",
+    "description": "Guests write private letters during the event — heartfelt wishes and memories that collect into one digital keepsake, opened after the event ends.",
+    "highlights": [
+      { "title": "Write from any device", "body": "Guests write straight from the link, no printed cards needed." },
+      { "title": "One shared keepsake", "body": "Every letter collects into a single, beautifully formatted digital book." },
+      { "title": "Open on your own time", "body": "The collection can open on the event day or later — your call." }
+    ],
+    "imageAlt": "A guest writing a private letter at the event"
+  }
+}

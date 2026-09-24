@@ -9,6 +9,7 @@ export default {
         line: "#E8E9E7",
         "line-soft": "#E8E8E5",
         surface: "#F7F7F5",
+        "surface-2": "#F0F0ED",
         muted: "#6B6B68",
         "muted-2": "#787875",
         faint: "#A8A8A5",

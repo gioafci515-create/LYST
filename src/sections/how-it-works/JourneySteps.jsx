@@ -146,7 +146,7 @@ export default function JourneySteps() {
   const steps = t("steps", { returnObjects: true }) ?? [];
 
   return (
-    <section className="flex w-full flex-col items-center bg-white py-24 max-lg:py-16">
+    <section className="flex w-full flex-col items-center bg-surface-2 py-24 max-lg:py-16">
       <div className="mx-auto flex w-full max-w-[1600px] flex-col items-start gap-[120px] px-20 max-lg:gap-16 max-lg:px-6">
         {steps.map((step, index) => (
           <JourneyStep

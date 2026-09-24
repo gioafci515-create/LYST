@@ -11,6 +11,7 @@ const Pricing = lazy(() => import("./pages/Pricing"));
 const About = lazy(() => import("./pages/About"));
 const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const InvitationsCatalog = lazy(() => import("./pages/InvitationsCatalog"));
+const FeatureDetail = lazy(() => import("./pages/FeatureDetail"));
 
 function RouteFallback() {
   return (
@@ -29,7 +30,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="product" element={<Product />} />
             <Route path="features" element={<Features />} />
-            <Route path="features/:slug" element={<ComingSoon titleKey="featureDetail" />} />
+            <Route path="features/:slug" element={<FeatureDetail />} />
             <Route path="pricing" element={<Pricing />} />
             <Route path="about" element={<About />} />
             <Route path="how-it-works" element={<HowItWorks />} />

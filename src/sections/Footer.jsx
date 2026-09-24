@@ -1,5 +1,32 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { SUPPORTED_LANGUAGES } from "../i18n";
+
+function TikTokIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.5 3c.3 2.1 1.6 3.5 3.8 3.7v3.1c-1.3.1-2.6-.3-3.8-1.1v6.6c0 3.3-2.4 5.7-5.6 5.7-3.2 0-5.6-2.4-5.6-5.6 0-3.2 2.5-5.7 5.6-5.7.3 0 .6 0 .9.1v3.2c-.3-.1-.6-.2-.9-.2-1.4 0-2.5 1.1-2.5 2.6 0 1.4 1.1 2.5 2.5 2.5 1.5 0 2.6-1.1 2.6-2.6V3h3z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" />
+    </svg>
+  );
+}
+
+const SOCIALS = [
+  { label: "TikTok", href: "https://www.tiktok.com/@lystinvites", Icon: TikTokIcon },
+  { label: "Instagram", href: "https://www.instagram.com/lystinvites/", Icon: InstagramIcon },
+];
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -57,6 +84,22 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-2">
             <p className="text-xs font-semibold text-white">{t("footer.contact")}</p>
             <p className="text-[13px] text-muted-2">hello@lyst.app</p>
+          </div>
+          <div className="flex items-center gap-3">
+            {SOCIALS.map(({ label, href, Icon }) => (
+              <motion.a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                whileHover={{ scale: 1.08, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex size-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/40 hover:text-white"
+              >
+                <Icon />
+              </motion.a>
+            ))}
           </div>
         </div>
       </div>

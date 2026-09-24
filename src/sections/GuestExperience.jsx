@@ -1,27 +1,106 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
+import UnderlineLink from "../components/UnderlineLink";
 
-const MotionLink = motion(Link);
+const PHOTOS = ["/images/Frame_254x140.png", "/images/how-it-works-1.png", "/images/about-3.png"];
+
+function HeartIcon() {
+  return (
+    <svg width="72" height="72" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21s-7.5-4.7-10-9.3C.4 8.3 2 4.8 5.4 4.1c2-.4 3.9.5 5 2.1 1.1-1.6 3-2.5 5-2.1 3.4.7 5 4.2 3.4 7.6C19.5 16.3 12 21 12 21z" />
+    </svg>
+  );
+}
 
 function PhoneMockup() {
   const { t } = useTranslation("home");
   const [rsvp, setRsvp] = useState("attend");
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [liked, setLiked] = useState(false);
+  const lastTap = useRef(0);
+
+  function goTo(i) {
+    setPhotoIndex((i + PHOTOS.length) % PHOTOS.length);
+  }
+
+  function handleDragEnd(_, info) {
+    if (info.offset.x < -40) goTo(photoIndex + 1);
+    else if (info.offset.x > 40) goTo(photoIndex - 1);
+  }
+
+  function handleTap() {
+    const now = Date.now();
+    if (now - lastTap.current < 350) {
+      setLiked(true);
+      setTimeout(() => setLiked(false), 700);
+    }
+    lastTap.current = now;
+  }
 
   return (
-    <div className="flex w-[310px] max-w-full flex-col gap-4 rounded-[40px] bg-black p-2 shadow-[0_16px_32px_rgba(0,0,0,0.10)]">
+    <motion.div
+      animate={{ y: [0, -12, 0] }}
+      transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+      className="flex w-[310px] max-w-full flex-col gap-4 rounded-[40px] bg-black p-2 shadow-[0_24px_48px_rgba(0,0,0,0.16)]"
+    >
       <div className="flex flex-1 flex-col gap-4 rounded-[32px] bg-white px-5 pb-5 pt-6">
         <div className="flex items-center justify-between text-xs font-semibold text-black">
           <span>9:41</span>
           <span className="text-[10px] text-muted">●●●</span>
         </div>
-        <img
-          src="/images/Frame_254x140.png"
-          alt={t("guestExperience.mockup.eventImageAlt")}
-          className="h-[140px] w-full rounded-xl object-cover"
-        />
+
+        <div className="relative h-[140px] w-full overflow-hidden rounded-xl bg-surface">
+          <motion.div
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.6}
+            onDragEnd={handleDragEnd}
+            onTap={handleTap}
+            className="h-full w-full cursor-grab active:cursor-grabbing"
+          >
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={photoIndex}
+                src={PHOTOS[photoIndex]}
+                alt={t("guestExperience.mockup.eventImageAlt")}
+                initial={{ opacity: 0, scale: 1.04 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.35 }}
+                className="h-full w-full select-none object-cover"
+                draggable={false}
+              />
+            </AnimatePresence>
+          </motion.div>
+
+          <AnimatePresence>
+            {liked && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.4 }}
+                animate={{ opacity: 1, scale: 1.15 }}
+                exit={{ opacity: 0, scale: 1.4 }}
+                transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                className="pointer-events-none absolute inset-0 flex items-center justify-center drop-shadow-lg"
+              >
+                <HeartIcon />
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <div className="pointer-events-none absolute inset-x-0 bottom-2 flex items-center justify-center gap-1.5">
+            {PHOTOS.map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all ${
+                  i === photoIndex ? "w-4 bg-white" : "w-1.5 bg-white/50"
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+
         <div className="flex flex-col gap-3">
           <h3 className="font-display text-2xl font-extrabold leading-tight text-black">
             {t("guestExperience.mockup.eventTitle")}
@@ -66,7 +145,7 @@ function PhoneMockup() {
           </motion.button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -91,16 +170,7 @@ export default function GuestExperience() {
             {t("guestExperience.title")}
           </h2>
           <p className="self-stretch text-base leading-7 text-muted">{t("guestExperience.body")}</p>
-          <MotionLink
-            to="/how-it-works"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.96 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="group flex items-center gap-2 text-[15px] font-semibold text-black"
-          >
-            {t("guestExperience.cta")}
-            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </MotionLink>
+          <UnderlineLink to="/how-it-works" label={t("guestExperience.cta")} />
         </Reveal>
       </div>
     </section>

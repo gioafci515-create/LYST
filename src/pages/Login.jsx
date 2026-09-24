@@ -168,14 +168,21 @@ export default function Login() {
           <div className="flex w-full max-w-[1600px] flex-wrap items-center justify-between gap-4 px-20 py-6 max-lg:px-6">
             <p className="text-[13px] text-muted">{t("rights")}</p>
             <div className="flex items-center gap-6">
-              <a href="#" className="text-[13px] text-muted hover:text-black">
-                {t("facebook")}
+              <a
+                href="https://www.tiktok.com/@lystinvites"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[13px] text-muted hover:text-black"
+              >
+                TikTok
               </a>
-              <a href="#" className="text-[13px] text-muted hover:text-black">
+              <a
+                href="https://www.instagram.com/lystinvites/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[13px] text-muted hover:text-black"
+              >
                 {t("instagram")}
-              </a>
-              <a href="#" className="text-[13px] text-muted hover:text-black">
-                {t("linkedin")}
               </a>
             </div>
           </div>

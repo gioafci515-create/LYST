@@ -89,6 +89,27 @@ export function MicIcon({ className = "" }) {
   );
 }
 
+export function EnvelopeIcon({ className = "" }) {
+  return (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className={className}>
+      <path
+        d="M2.25 4.5h13.5a.75.75 0 01.75.75v7.5a.75.75 0 01-.75.75H2.25a.75.75 0 01-.75-.75v-7.5a.75.75 0 01.75-.75z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.25 5.25l6.75 5.25 6.75-5.25"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function ClockIcon({ className = "" }) {
   return (
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className={className}>

@@ -52,7 +52,7 @@ export default function FeaturesManage() {
   const reminderItems = t("manage.reminders.items", { returnObjects: true });
 
   return (
-    <section className="flex w-full flex-col items-center bg-white py-24 max-lg:py-16">
+    <section className="flex w-full flex-col items-center bg-surface-2 py-24 max-lg:py-16">
       <div className="mx-auto flex w-full max-w-[1600px] flex-col items-start gap-16 px-20 max-lg:px-6">
         <Reveal direction="up" className="flex w-[720px] max-w-full flex-col items-start gap-4">
           <p className="text-[13px] font-bold uppercase tracking-wide text-muted-2">A - MANAGE</p>

@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
-
-const MotionLink = motion(Link);
+import UnderlineLink from "../components/UnderlineLink";
 
 function MicIcon() {
   return (
@@ -51,14 +49,7 @@ export default function FeatureShowcase() {
           </div>
           <div className="flex w-[515px] max-w-full flex-col items-start gap-4 pt-6">
             <p className="text-base leading-7 text-muted">{t("featureShowcase.body")}</p>
-            <MotionLink
-              to="/features"
-              whileHover={{ x: 4 }}
-              transition={{ type: "spring", stiffness: 400, damping: 20 }}
-              className="text-[15px] font-semibold text-black"
-            >
-              {t("featureShowcase.link")}
-            </MotionLink>
+            <UnderlineLink to="/features" label={t("featureShowcase.link")} />
           </div>
         </Reveal>
 

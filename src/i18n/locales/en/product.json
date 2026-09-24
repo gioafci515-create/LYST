@@ -5,6 +5,12 @@
     "ctaPrimary": "Create an invitation",
     "ctaSecondary": "See how it works"
   },
+  "proof": {
+    "eyebrow": "Real example",
+    "title": "This isn't a mockup.",
+    "body": "Data & Keti's event is already running on LYST with real guests. See what a published invitation looks like on its own link.",
+    "cta": "See the real invitation"
+  },
   "inviteLink": {
     "eyebrow": "01 // Digital Invitation",
     "title": "Every important detail of your event, on one link.",

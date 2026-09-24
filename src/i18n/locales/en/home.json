@@ -67,6 +67,11 @@
       { "name": "Nino Beridze", "meta": "+2 guests", "style": "-", "status": "Awaiting response", "tone": "amber" }
     ]
   },
+  "photoMoments": {
+    "eyebrow": "Real moments",
+    "title": "Memories that stay.",
+    "body": "Photos guests share turn into one living archive — every event writes its own visual story."
+  },
   "featureShowcase": {
     "eyebrow": "Event Experiences",
     "title": "More than an invitation.",

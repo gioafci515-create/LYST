@@ -28,7 +28,7 @@ export default function Header() {
 
         <nav className="flex flex-wrap items-center gap-10 max-lg:hidden">
           {navLinks.map(({ label, to }) => (
-            <Link key={to} to={to} className="text-sm font-medium text-muted transition-colors hover:text-black">
+            <Link key={to} to={to} className="text-sm font-bold text-muted transition-colors hover:text-black">
               {label}
             </Link>
           ))}
@@ -90,7 +90,7 @@ export default function Header() {
                   key={to}
                   to={to}
                   onClick={() => setMenuOpen(false)}
-                  className="text-base font-medium text-ink-soft"
+                  className="text-base font-bold text-ink-soft"
                 >
                   {label}
                 </Link>

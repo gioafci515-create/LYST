@@ -2,6 +2,7 @@ import Hero from "../sections/Hero";
 import TechEmotion from "../sections/TechEmotion";
 import GuestExperience from "../sections/GuestExperience";
 import HostDashboard from "../sections/HostDashboard";
+import PhotoMoments from "../sections/PhotoMoments";
 import FeatureShowcase from "../sections/FeatureShowcase";
 import ClosingMoments from "../sections/ClosingMoments";
 import FinalCta from "../sections/FinalCta";
@@ -13,6 +14,7 @@ export default function Home() {
       <TechEmotion />
       <GuestExperience />
       <HostDashboard />
+      <PhotoMoments />
       <FeatureShowcase />
       <ClosingMoments />
       <FinalCta />

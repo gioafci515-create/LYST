@@ -37,6 +37,10 @@ import invitationsKa from "./locales/ka/invitations.json";
 import invitationsEn from "./locales/en/invitations.json";
 import invitationsRu from "./locales/ru/invitations.json";
 
+import featureDetailKa from "./locales/ka/featureDetail.json";
+import featureDetailEn from "./locales/en/featureDetail.json";
+import featureDetailRu from "./locales/ru/featureDetail.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "ka", label: "ქა" },
   { code: "en", label: "EN" },
@@ -53,6 +57,7 @@ const NAMESPACES = [
   "about",
   "howItWorks",
   "invitations",
+  "featureDetail",
 ];
 
 const STORAGE_KEY = "lyst-language";
@@ -76,6 +81,7 @@ i18n.use(initReactI18next).init({
       about: aboutKa,
       howItWorks: howItWorksKa,
       invitations: invitationsKa,
+      featureDetail: featureDetailKa,
     },
     en: {
       common: commonEn,
@@ -87,6 +93,7 @@ i18n.use(initReactI18next).init({
       about: aboutEn,
       howItWorks: howItWorksEn,
       invitations: invitationsEn,
+      featureDetail: featureDetailEn,
     },
     ru: {
       common: commonRu,
@@ -98,6 +105,7 @@ i18n.use(initReactI18next).init({
       about: aboutRu,
       howItWorks: howItWorksRu,
       invitations: invitationsRu,
+      featureDetail: featureDetailRu,
     },
   },
   lng: getInitialLanguage(),

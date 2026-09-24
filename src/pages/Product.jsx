@@ -1,4 +1,5 @@
 import ProductHero from "../sections/product/ProductHero";
+import ProductProof from "../sections/product/ProductProof";
 import ProductInviteLink from "../sections/product/ProductInviteLink";
 import ProductGuestManagement from "../sections/product/ProductGuestManagement";
 import ProductExperience from "../sections/product/ProductExperience";
@@ -9,6 +10,7 @@ export default function Product() {
   return (
     <>
       <ProductHero />
+      <ProductProof />
       <ProductInviteLink />
       <ProductGuestManagement />
       <ProductExperience />
