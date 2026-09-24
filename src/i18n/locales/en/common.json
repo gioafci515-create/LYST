@@ -1,0 +1,36 @@
+{
+  "badge": "Platform",
+  "nav": {
+    "product": "Product",
+    "invitations": "Invitations",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "about": "About us"
+  },
+  "login": "Log in",
+  "cta": "Create an invitation",
+  "backToWebsite": "Back to website",
+  "footer": {
+    "tagline": "Invite smarter.",
+    "columns": {
+      "product": { "title": "Product", "items": ["Event space", "Letters", "Archive"] },
+      "features": { "title": "Features", "items": ["Photo challenges", "Custom domain", "Shared gallery"] },
+      "invitations": {
+        "title": "Digital invitations",
+        "items": ["Digital styling", "Interactive experiences", "Custom URL", "Shared gallery"]
+      },
+      "about": { "title": "About us", "items": ["Our story", "List", "Contact", "Careers"] }
+    },
+    "language": "Language",
+    "contact": "Contact",
+    "rights": "© 2026 Lyst. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "comingSoon": {
+    "message": "This page is coming soon.",
+    "featureDetail": "Feature details",
+    "invitationDetail": "Invitation details",
+    "create": "Create an invitation"
+  }
+}

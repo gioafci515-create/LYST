@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "heading": "Digital invitations and interactive events that live on with the celebration.",
+    "subtitle": "Discover a collection of digital invitations and interactive events, crafted with distinctive aesthetics and advanced functionality."
+  },
+  "categories": [
+    "All",
+    "Wedding",
+    "Birthday",
+    "Private Event",
+    "Corporate",
+    "Minimalist",
+    "Classic",
+    "Modern"
+  ],
+  "templates": [
+    {
+      "slug": "mtvaris-shuki",
+      "name": "Moonlight",
+      "tag": "Wedding",
+      "description": "An elegant digital invitation inspired by the night sky and moonlit aesthetics. Perfect for a refined evening wedding."
+    },
+    {
+      "slug": "okros-purtslebi",
+      "name": "Golden Pages",
+      "tag": "Birthday",
+      "description": "A warm, contemporary design finished with gold accents for your milestone celebration."
+    },
+    {
+      "slug": "minimalisti",
+      "name": "Minimalist",
+      "tag": "Corporate",
+      "description": "Clean lines, crisp geometry, and a professional aesthetic for business events."
+    },
+    {
+      "slug": "baghis-tsveuleba",
+      "name": "Garden Party",
+      "tag": "Private Event",
+      "description": "Soft, organic floral motifs for cozy evenings spent with close friends."
+    },
+    {
+      "slug": "klasikuri-eleganti",
+      "name": "Classic Elegance",
+      "tag": "Wedding",
+      "description": "Timeless beauty, set in classic typography with a premium editorial texture."
+    },
+    {
+      "slug": "tanamedrove",
+      "name": "Modern",
+      "tag": "Modern",
+      "description": "Abstract art and vibrant shapes for any kind of unconventional celebration."
+    }
+  ],
+  "cta": {
+    "viewEdit": "View and edit"
+  },
+  "noResults": "No templates in this category yet."
+}

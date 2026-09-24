@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "eyebrow": "About Us",
+    "heading": "LYST was created so an event isn't just organized — it becomes memorable."
+  },
+  "mission": {
+    "eyebrow": "Our Mission",
+    "heading": "Why LYST was created",
+    "body": "An invitation often only serves you up until the event. LYST turns it into a living digital space that stays with guests from the invite all the way to a shared memory.",
+    "imageAlt": "LYST's mission"
+  },
+  "transformation": {
+    "eyebrow": "Transformation",
+    "heading": "What we change",
+    "comparisons": [
+      {
+        "before": "Scattered communication",
+        "after": "A refined digital space",
+        "description": "Invitations, event details, RSVPs, and guest communication come together in one place, saving time and simplifying management."
+      },
+      {
+        "before": "Static details",
+        "after": "Interactive map and RSVP",
+        "description": "Guests get instant updates, the exact location, and can confirm attendance with ease."
+      },
+      {
+        "before": "Scattered chats and albums",
+        "after": "One living shared memory",
+        "description": "Every photo, video, and voice greeting comes together in one place and is kept forever."
+      }
+    ]
+  },
+  "vision": {
+    "eyebrow": "Vision",
+    "heading": "Technology that serves emotion",
+    "body": "We believe digital products should bring people closer together. Every feature of LYST is built to simplify the chaos of organizing so you have more time to enjoy the celebration.",
+    "imageAlt": "A human moment at an event"
+  },
+  "brandPhotos": {
+    "heading": "Atmospheric moments",
+    "alts": ["Atmospheric moment 1", "Atmospheric moment 2", "Atmospheric moment 3"]
+  }
+}

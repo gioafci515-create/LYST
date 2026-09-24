@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "eyebrow": "Pricing",
+    "heading": "Choose what your event needs."
+  },
+  "featuredBadge": "Recommended",
+  "tiers": [
+    {
+      "name": "Starter",
+      "description": "For personal events",
+      "price": "Price on request",
+      "features": [
+        "Digital invitation & RSVP",
+        "1 event",
+        "Up to 50 guests",
+        "Basic gallery",
+        "Email support"
+      ],
+      "cta": "Get started"
+    },
+    {
+      "name": "Premium",
+      "description": "For medium and large events",
+      "price": "Price on request",
+      "features": [
+        "Everything in Starter",
+        "5 events",
+        "Up to 200 guests",
+        "Premium invitation styles",
+        "Audio guestbook",
+        "Priority support"
+      ],
+      "cta": "Get started"
+    },
+    {
+      "name": "Exclusive",
+      "description": "For corporate and premium events",
+      "price": "Price on request",
+      "features": [
+        "Everything in Premium",
+        "Unlimited events",
+        "Unlimited guests",
+        "Premium archive features",
+        "Personal manager",
+        "Branded domain"
+      ],
+      "cta": "Contact us"
+    }
+  ],
+  "comparison": {
+    "heading": "Feature comparison",
+    "featuresLabel": "Features",
+    "columns": ["Starter", "Premium", "Exclusive"],
+    "rows": [
+      { "feature": "Digital invitation & RSVP", "values": [true, true, true] },
+      { "feature": "Number of events", "values": ["1", "5", "Unlimited"] },
+      { "feature": "Number of guests", "values": ["Up to 50", "Up to 200", "Unlimited"] },
+      { "feature": "Premium styles", "values": [false, true, true] },
+      { "feature": "Audio guestbook", "values": [false, true, true] },
+      { "feature": "Premium archive", "values": [false, false, true] },
+      { "feature": "Branded domain", "values": [false, false, true] },
+      { "feature": "Support", "values": ["Email", "Priority", "Personal manager"] }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How does RSVP confirmation work?",
+        "answer": "Guests receive a unique link where, with a single click, they can confirm attendance, specify plus-ones, and provide any other necessary information."
+      },
+      {
+        "question": "What is the audio guestbook?",
+        "answer": "It's a digital feature that lets guests record audio greetings and well-wishes straight from their phones, permanently stored in your gallery."
+      },
+      {
+        "question": "Can I change my plan before the event?",
+        "answer": "Yes, you can upgrade your plan and add the features you want at any time, up to at least 48 hours before the event."
+      }
+    ]
+  }
+}

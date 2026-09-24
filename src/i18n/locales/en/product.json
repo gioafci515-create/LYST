@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "More than an invitation.",
+    "description": "LYST brings event planning, guest management, interaction, and memory-keeping together in one place.",
+    "ctaPrimary": "Create an invitation",
+    "ctaSecondary": "See how it works"
+  },
+  "inviteLink": {
+    "eyebrow": "01 // Digital Invitation",
+    "title": "Every important detail of your event, on one link.",
+    "description": "Guests no longer need to dig through different chats for addresses, times, and dress codes. Everything is presented in a polished, adaptive digital space that opens perfectly from any smartphone.",
+    "features": [
+      {
+        "label": "Adaptive digital invitation",
+        "body": "From a single link, guests see the event details, dress code, host messages, and can respond to the invitation."
+      },
+      {
+        "label": "Personal link",
+        "body": "Each guest gets their own link, where all details and interactions stay in one place."
+      },
+      {
+        "label": "Perfect on mobile",
+        "body": "The invitation automatically adapts to smartphone screens, making it easy for guests to view it quickly and confirm attendance."
+      }
+    ]
+  },
+  "guestManagement": {
+    "eyebrow": "02 // Guest Management",
+    "title": "Guest responses and statuses, all in one place.",
+    "description": "Confirming attendance is effortless, with no extra calls or messages. Guests can specify who's coming with them and share important details with you.",
+    "card": {
+      "title": "Responses received from guests",
+      "badge": "Statistics",
+      "stats": [
+        { "label": "Confirmed", "value": "74 guests" },
+        { "label": "Can't attend", "value": "12 guests" }
+      ],
+      "guests": [
+        { "name": "Aleksandre Mdivani", "note": "Accompanying guests", "status": "Confirmed" },
+        { "name": "Tamar Lortkipanidze", "note": "Attending alone", "status": "Confirmed" },
+        { "name": "Lasha Giorgobiani", "note": "No response yet", "status": "Pending" }
+      ]
+    }
+  },
+  "experience": {
+    "eyebrow": "03 // Event Experience",
+    "title": "Photos, videos, and voice messages.",
+    "description": "Turn your guests into co-creators of the event. With a digital disposable camera and voice messages recorded live, every emotion is captured in real time.",
+    "card": {
+      "title": "Event experience",
+      "features": [
+        {
+          "label": "Event camera",
+          "body": "Guests upload photos and videos directly through a disposable digital camera."
+        },
+        {
+          "label": "Voice guestbook",
+          "body": "Guests leave voice congratulations and heartfelt messages."
+        },
+        {
+          "label": "Letters from the hall",
+          "body": "Guests write letters that are gathered into one digital archive once the event is over."
+        },
+        {
+          "label": "Hidden Moments",
+          "body": "Guests share unexpected moments, saved into a special collection just for the host."
+        }
+      ]
+    }
+  },
+  "archive": {
+    "eyebrow": "04 // After the Event",
+    "title": "Gallery, voice archive, letters, and memories.",
+    "description": "Not a single photo or voice message gets lost. The moment the event ends, LYST automatically generates a digital archive that keeps those precious moments you created together safe for years to come.",
+    "imageAlt": "Event memory",
+    "card": {
+      "title": "Digital archive",
+      "body": "Photos, voice messages, letters, and shared moments stay together as one living digital memory."
+    }
+  },
+  "cta": {
+    "title": "Ready for your first event?",
+    "description": "Create your digital invitation today and turn a simple gathering into an unforgettable experience.",
+    "button": "Create an invitation"
+  }
+}

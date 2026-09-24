@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "eyebrow": "HOW LYST WORKS",
+    "title": "One link. One seamless experience.",
+    "subtitle": "From planning to the final memory - a simple, refined, and emotional process for you and your guests."
+  },
+  "steps": [
+    {
+      "number": "01",
+      "title": "Create",
+      "description": "Choose your event type, pick a digital invitation style, and add the details - time, location, text, and image.",
+      "panel": {
+        "title": "Creating the event",
+        "badge": "Digital",
+        "fields": [
+          { "label": "Event", "value": "Autumn Dinner" },
+          { "label": "Style", "value": "Minimal" },
+          { "label": "Time", "value": "September 18, 19:00" },
+          { "label": "Location", "value": "Tbilisi, Georgia" }
+        ]
+      }
+    },
+    {
+      "number": "02",
+      "title": "Invite",
+      "description": "Publish your event, get a unique link, and share it with your guests. Collect RSVPs and manage them all in one digital space.",
+      "panel": {
+        "title": "Publishing the invitation",
+        "badge": "Link",
+        "fields": [
+          { "label": "Status", "value": "Published" },
+          { "label": "Unique link", "value": "lyst.ge/autumn-dinner" },
+          { "label": "RSVP", "value": "24 guests · 18 confirmed" }
+        ]
+      }
+    },
+    {
+      "number": "03",
+      "title": "Experience",
+      "description": "Guests open the same digital space, take photos, leave voice and text messages, and become part of a shared experience.",
+      "panel": {
+        "title": "Guest experience",
+        "badge": null,
+        "fields": [
+          { "label": "Photos", "value": "12 photos" },
+          { "label": "Voice messages", "value": "8 recordings" },
+          {
+            "label": "Guest messages",
+            "value": "Mariam left a voice message · Giorgi sent a photo · Nino wrote a text"
+          }
+        ]
+      }
+    },
+    {
+      "number": "04",
+      "title": "Memory",
+      "description": "After the event ends, all the content created stays in one place. A digital archive is formed, preserving your shared memories for years to come.",
+      "panel": {
+        "title": "Digital archive",
+        "badge": null,
+        "imageAlt": "Event memory",
+        "fields": [
+          {
+            "label": "Saved content",
+            "value": "32 photos · 18 voice messages · 14 text messages"
+          }
+        ]
+      }
+    }
+  ],
+  "cta": {
+    "title": "Plan your event today",
+    "subtitle": "Create an event that brings your guests together in one digital experience and stays as a lasting memory.",
+    "button": "Create an invitation"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "badge": "Platform",
+  "backToWebsite": "Back to website",
+  "cta": "Create an invitation",
+  "heading": "Log in",
+  "subtitle": "Welcome to your smart digital invitation",
+  "emailLabel": "Email",
+  "emailPlaceholder": "name@example.com",
+  "emailInvalid": "Please enter a valid email address",
+  "passwordLabel": "Password",
+  "passwordPlaceholder": "••••••••",
+  "passwordInvalid": "Password must be at least 6 characters",
+  "forgotPassword": "Forgot password",
+  "submit": "Log in",
+  "submitting": "Loading...",
+  "successMessage": "You have successfully logged in",
+  "noAccount": "Don't have an account?",
+  "signUp": "Sign up",
+  "rights": "© 2026 Lyst. All rights reserved.",
+  "facebook": "Facebook",
+  "instagram": "Instagram",
+  "linkedin": "LinkedIn"
+}

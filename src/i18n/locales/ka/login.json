@@ -1,0 +1,23 @@
+{
+  "badge": "პლატფორმა",
+  "backToWebsite": "ვებსაიტზე დაბრუნება",
+  "cta": "შექმენი მოსაწვევი",
+  "heading": "შესვლა",
+  "subtitle": "მიესალმეთ თქვენს ჭკვიან ციფრულ მოსაწვევს",
+  "emailLabel": "ელფოსტა",
+  "emailPlaceholder": "სახელი@მაგალითი.com",
+  "emailInvalid": "გთხოვთ, შეიყვანოთ ვალიდური ელფოსტა",
+  "passwordLabel": "პაროლი",
+  "passwordPlaceholder": "••••••••",
+  "passwordInvalid": "პაროლი უნდა შეიცავდეს მინიმუმ 6 სიმბოლოს",
+  "forgotPassword": "პაროლის აღდგენა",
+  "submit": "შესვლა",
+  "submitting": "იტვირთება...",
+  "successMessage": "შესვლა წარმატებულია",
+  "noAccount": "ანგარიში არ გაქვს?",
+  "signUp": "რეგისტრაცია",
+  "rights": "© 2026 Lyst. ყველა უფლება დაცულია.",
+  "facebook": "Facebook",
+  "instagram": "Instagram",
+  "linkedin": "LinkedIn"
+}

@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "eyebrow": "DIGITAL INVITATIONS + EVENT EXPERIENCE",
+    "title": "Invite smarter.",
+    "body": "LYST is a digital invitation and event experience platform — bringing together the details, RSVPs, interactions, and memories your guests create, all in one place.",
+    "ctaPrimary": "Create an Invitation",
+    "ctaSecondary": "See how it works",
+    "imageAlt": "Wedding celebration"
+  },
+  "techEmotion": {
+    "titleLine1": "Smart technology.",
+    "titleLine2": "Living emotion.",
+    "body": "LYST turns a digital invitation into one seamless event experience — making hosting effortless and turning guests into co-authors of shared memories.",
+    "features": [
+      {
+        "index": "01 / Anticipation",
+        "title": "Anticipation",
+        "body": "Before the event, LYST builds anticipation and gives guests everything they need to know in one place."
+      },
+      {
+        "index": "02 / Participation",
+        "title": "Participation",
+        "body": "During the event, guests respond, join in, and help shape the shared experience themselves."
+      },
+      {
+        "index": "03 / Memory",
+        "title": "Memory",
+        "body": "After the event, photos, voices, and messages live on as one vivid digital memory."
+      }
+    ]
+  },
+  "guestExperience": {
+    "eyebrow": "Guest Space / Host Dashboard",
+    "title": "The invitation is just the beginning.",
+    "body": "LYST gives guests one continuous experience — before, during, and after the event. Every important detail, response, and interaction stays in the same place.",
+    "cta": "See how it works",
+    "mockup": {
+      "eventTitle": "Autumn Dinner",
+      "eventImageAlt": "Autumn dinner",
+      "hosts": "Hosted by Nino & Giorgi",
+      "dateTime": "Sep 22, 6:30 PM - late",
+      "location": "Veranda, Tbilisi",
+      "dressCodeLabel": "Dress code:",
+      "dressCodeValue": "Casual",
+      "attend": "I'll be there",
+      "decline": "Can't make it"
+    }
+  },
+  "hostDashboard": {
+    "eyebrow": "Host Dashboard",
+    "title": "Everything. At a glance.",
+    "body": "Guest lists, RSVPs, statuses, and key details — all gathered in one dashboard. Less chaos, fewer messages, and complete control.",
+    "panel": {
+      "title": "Guest Management",
+      "subtitle": "Hudson Valley Evening Dinner — September 22",
+      "export": "Export",
+      "responsesLabel": "Recent Responses"
+    },
+    "stats": [
+      { "label": "Confirmed", "value": 32 },
+      { "label": "Can't attend", "value": 8 },
+      { "label": "Awaiting response", "value": 4 }
+    ],
+    "responses": [
+      { "name": "Mariam Chkheidze", "meta": "+1 guest", "style": "Casual", "status": "Confirmed", "tone": "green" },
+      { "name": "Davit Kvaratskhelia", "meta": "Solo", "style": "Casual", "status": "Confirmed", "tone": "green" },
+      { "name": "Nino Beridze", "meta": "+2 guests", "style": "-", "status": "Awaiting response", "tone": "amber" }
+    ]
+  },
+  "featureShowcase": {
+    "eyebrow": "Event Experiences",
+    "title": "More than an invitation.",
+    "body": "Guests leave voice messages right from their phones — heartfelt words, toasts, and emotions that live on long after the event.",
+    "link": "See all features",
+    "pills": ["Event Camera", "Voice Guestbook", "Letters From the Room"],
+    "voiceNotes": [
+      { "name": "Ana Gelashvili", "time": "23:42", "duration": "0:24" },
+      { "name": "Luka & Tamari", "time": "00:15", "duration": "1:08" },
+      { "name": "Giorgi Merabishvili", "time": "01:02", "duration": "0:45" }
+    ],
+    "record": {
+      "label": "Record a voice message",
+      "heading": "Tap to record",
+      "headingActive": "Recording... tap to stop",
+      "body": "Record a short voice message. Once you're done, you can listen back and send it."
+    }
+  },
+  "closingMoments": {
+    "archiveLabel": "Archive",
+    "brand": "LYST",
+    "titleLine1": "The evening ends.",
+    "titleLine2": "The feeling doesn't.",
+    "moments": [
+      "Your best friend's voice, trembling with emotion",
+      "A spontaneous last photo",
+      "A message you'll read again years from now",
+      "The moments the host missed"
+    ],
+    "imageAlt": "Dance floor moment"
+  },
+  "finalCta": {
+    "title": "Your event deserves more than an invitation.",
+    "body": "Create an experience that reaches your guests before the event, stays with them during it, and lingers long after it ends.",
+    "cta": "Create an Invitation"
+  }
+}

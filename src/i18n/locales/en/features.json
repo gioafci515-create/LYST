@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "eyebrow": "Library",
+    "title": "The Complete LYST Feature Codex",
+    "description": "This page is the complete index of digital capabilities. Every feature is organized into three editorial groups: Manage, Experience, and Remember.",
+    "categories": {
+      "manage": "RSVP responses, guest management, automatic reminders, event information, and personal links.",
+      "experience": "Event camera, disposable mode, voice guestbook, hidden moments, letters from the room, and live polls.",
+      "remember": "Shared gallery, delayed reminders, digital time capsule, video messages, and the event archive."
+    },
+    "viewCategory": "Browse this category"
+  },
+  "manage": {
+    "title": "Management Tools",
+    "description": "Guest responses, statuses, reminders, and event details, all in one workspace.",
+    "rsvp": {
+      "description": "Guests confirm attendance in a single click, adding plus-ones and specific dietary requirements right there.",
+      "cta": "More about Manage",
+      "statsTitle": "Live RSVP Stats",
+      "updatedAt": "Updated 2 min ago",
+      "confirmedLabel": "Confirmed",
+      "confirmedValue": "48 guests",
+      "pendingLabel": "Pending",
+      "pendingValue": "12 guests",
+      "plusGuestsLabel": "Plus-ones",
+      "plusGuestsValue": "18 guests",
+      "dietaryLabel": "Dietary requests",
+      "dietaryValue": "7 notes"
+    },
+    "guestList": {
+      "badge": "Guest List",
+      "guests": [
+        { "name": "Giorgi Merabishvili", "status": "Confirmed" },
+        { "name": "Mariam Chkheidze", "status": "Confirmed" },
+        { "name": "Ana Gelashvili", "status": "Pending" },
+        { "name": "Davit Kalandadze", "status": "Confirmed" }
+      ],
+      "title": "Detailed Guest List",
+      "description": "Track every guest and their status in real time. Group them by table, category, or response from one convenient panel.",
+      "cta": "Go to the list"
+    },
+    "location": {
+      "title": "Location, Time & Dress Code",
+      "description": "Give guests instant map navigation, calendar links, and visual dress-code inspiration, all in one intuitive interface.",
+      "whereLabel": "Where & when",
+      "whereValue": "Tbilisi, a cozy veranda",
+      "dateTime": "September 22, 6:30 PM",
+      "dressCodeLabel": "Dress code",
+      "dressCodeValue": "Casual style",
+      "calendarLinkLabel": "Calendar link",
+      "calendarTitle": "Add to calendar",
+      "calendarSubtitle": "Automatic notice and reminder"
+    },
+    "reminders": {
+      "title": "Automatic Reminders",
+      "description": "Schedule reminders and notices for set times before the event. Guests automatically receive updates and reminders.",
+      "scheduleTitle": "Reminder schedule",
+      "items": [
+        { "label": "1 day before", "value": "Reminder" },
+        { "label": "2 hours before", "value": "Reminder" },
+        { "label": "30 minutes before", "value": "Reminder" }
+      ],
+      "infoTitle": "Reminders are sent automatically",
+      "infoSubtitle": "At the times you set before the event"
+    },
+    "customUrl": {
+      "description": "Create a personal link that takes guests straight into the event's digital experience. It simplifies reminders, RSVPs, and sharing event details.",
+      "linkTitle": "Personal link",
+      "urlTitle": "lyst.ge/your-event",
+      "urlSubtitle": "Guests go straight to the event page",
+      "shareTitle": "Share the link on any channel",
+      "shareSubtitle": "SMS, WhatsApp, email, or social media"
+    }
+  },
+  "experience": {
+    "title": "The Event Experience",
+    "description": "A digital camera, voice guestbook, hidden moments, and live polls - the event doesn't end when guests leave the room.",
+    "cards": [
+      {
+        "name": "Event Camera",
+        "description": "Guests take and upload photos straight from the link. A disposable digital camera with a fun effect."
+      },
+      {
+        "name": "Disposable Camera Mode",
+        "description": "Guests shoot photos in a disposable-camera style. Photos merge into the gallery as soon as they're uploaded."
+      },
+      {
+        "name": "Voice Guestbook",
+        "description": "Capture the real emotion. Voice greetings and messages that will move or crack you up years later."
+      },
+      {
+        "name": "Hidden Moments",
+        "description": "Hidden moments and letters that automatically unlock at a time you choose in the future."
+      },
+      {
+        "name": "Letters From the Room",
+        "description": "Guests can leave anonymous or personal letters and thanks right as the event wraps up."
+      },
+      {
+        "name": "Live Event Polls",
+        "description": "Actively engage guests with live polls. Create questions about the music, the playlist, the next event, or the event's vibe."
+      }
+    ]
+  },
+  "remember": {
+    "title": "Memory Archive",
+    "description": "Photos, voice messages, video messages, and a time capsule - everything in one digital archive.",
+    "cards": [
+      {
+        "name": "Shared Gallery",
+        "description": "Every shot taken by every guest comes together in one polished, living digital archive."
+      },
+      {
+        "name": "Message for Later",
+        "description": "Photos stay locked until 9:00 AM the day after the event, building a special sense of anticipation."
+      },
+      {
+        "name": "Digital Time Capsule",
+        "description": "Hidden moments and letters that automatically unlock at a time you choose in the future."
+      },
+      {
+        "name": "Video Messages",
+        "description": "Guests record video messages and greetings that merge into one digital archive after the event."
+      },
+      {
+        "name": "Event Archive",
+        "description": "After the event, all content and messages are stored in a digital archive that stays accessible for years to come."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start your first digital adventure",
+    "description": "Create a completely different kind of anticipation and turn your guests into co-authors of the event.",
+    "button": "Create an invitation"
+  }
+}

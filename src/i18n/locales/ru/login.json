@@ -1,0 +1,23 @@
+{
+  "badge": "Платформа",
+  "backToWebsite": "Вернуться на сайт",
+  "cta": "Создать приглашение",
+  "heading": "Вход",
+  "subtitle": "Добро пожаловать в ваше умное цифровое приглашение",
+  "emailLabel": "Электронная почта",
+  "emailPlaceholder": "имя@пример.com",
+  "emailInvalid": "Пожалуйста, введите действительный адрес электронной почты",
+  "passwordLabel": "Пароль",
+  "passwordPlaceholder": "••••••••",
+  "passwordInvalid": "Пароль должен содержать не менее 6 символов",
+  "forgotPassword": "Восстановить пароль",
+  "submit": "Войти",
+  "submitting": "Загрузка...",
+  "successMessage": "Вы успешно вошли в систему",
+  "noAccount": "Нет аккаунта?",
+  "signUp": "Регистрация",
+  "rights": "© 2026 Lyst. Все права защищены.",
+  "facebook": "Facebook",
+  "instagram": "Instagram",
+  "linkedin": "LinkedIn"
+}
