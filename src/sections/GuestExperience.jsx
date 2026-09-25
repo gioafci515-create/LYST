@@ -4,7 +4,11 @@ import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
 import UnderlineLink from "../components/UnderlineLink";
 
-const PHOTOS = ["/images/Frame_254x140.png", "/images/how-it-works-1.png", "/images/about-3.png"];
+const PHOTOS = [
+  "/images/Frame_254x140.png",
+  "/images/change-image_350x320.png",
+  "/images/believe-image_350x320.png",
+];
 
 function HeartIcon() {
   return (

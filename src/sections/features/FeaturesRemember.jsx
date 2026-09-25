@@ -35,7 +35,7 @@ export default function FeaturesRemember() {
                 <motion.div whileHover={{ y: -4, scale: 1.01 }} whileTap={{ scale: 0.98 }} className="h-full">
                   <Link
                     to={to}
-                    className="flex h-full flex-col items-start gap-6 rounded-2xl border border-line bg-surface p-8 transition-colors hover:border-black"
+                    className="flex h-full flex-col items-start gap-6 rounded-2xl border border-line bg-white p-8 transition-colors hover:border-black"
                   >
                     <div className="flex w-full items-center justify-between gap-3">
                       <h3 className="font-display text-2xl font-extrabold text-black">{card.name}</h3>
