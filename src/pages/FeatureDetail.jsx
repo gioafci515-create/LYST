@@ -3,7 +3,15 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
 import ComingSoon from "./ComingSoon";
-import { CameraIcon, MicIcon, EnvelopeIcon } from "../sections/features/icons";
+import {
+  CameraIcon,
+  MicIcon,
+  EnvelopeIcon,
+  ClockIcon,
+  CalendarIcon,
+  BellIcon,
+  GalleryIcon,
+} from "../sections/features/icons";
 
 const MotionLink = motion(Link);
 
@@ -11,6 +19,14 @@ const CONTENT = {
   "event-camera": { key: "eventCamera", image: "/images/how-it-works-2.png", Icon: CameraIcon },
   "voice-guestbook": { key: "voiceGuestbook", image: "/images/how-it-works-3.png", Icon: MicIcon },
   "letters-from-the-room": { key: "lettersFromTheRoom", image: "/images/invitations-3.png", Icon: EnvelopeIcon },
+  "disposable-camera": { key: "disposableCamera", image: "/images/disposable-camera-toast.png", Icon: CameraIcon },
+  "hidden-moments": { key: "hiddenMoments", image: "/images/hidden-moments-embrace.png", Icon: ClockIcon },
+  "live-polls": { key: "livePolls", image: "/images/live-polls-celebration.png", Icon: BellIcon },
+  "shared-gallery": { key: "sharedGallery", image: "/images/shared-gallery-crowd.png", Icon: GalleryIcon },
+  "message-for-later": { key: "messageForLater", image: "/images/message-for-later-card.png", Icon: EnvelopeIcon },
+  "time-capsule": { key: "timeCapsule", image: "/images/time-capsule-silhouette.png", Icon: CalendarIcon },
+  "video-messages": { key: "videoMessages", image: "/images/video-messages-devices.png", Icon: MicIcon },
+  "event-archive": { key: "eventArchive", image: "/images/event-archive-table.png", Icon: ClockIcon },
 };
 
 export default function FeatureDetail() {

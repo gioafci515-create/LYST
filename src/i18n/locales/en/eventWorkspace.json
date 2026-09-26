@@ -1,0 +1,105 @@
+{
+  "sidebar": {
+    "label": "Event Workspace",
+    "eventName": "Luka & Tamar's Wedding",
+    "status": {
+      "active": "Active",
+      "date": "October 18",
+      "venueGuests": "Chateau Mukhrani · 120 / 150 guests"
+    },
+    "nav": {
+      "overview": "Overview",
+      "guests": "Guests",
+      "rsvp": "RSVP",
+      "eventCamera": "Event Camera",
+      "gallery": "Gallery",
+      "voiceMessages": "Voice Messages",
+      "hiddenMoments": "Hidden Moments",
+      "letters": "Letters",
+      "experiences": "Experiences",
+      "settings": "Settings"
+    },
+    "user": {
+      "name": "Mariam Tsiklauri",
+      "profile": "Profile"
+    }
+  },
+  "topBar": {
+    "title": "Event Workspace",
+    "subtitle": "Luka & Tamar's Wedding",
+    "notificationsLabel": "Notifications",
+    "notificationsEmpty": "No new notifications",
+    "shareInvitation": "Share Invitation",
+    "shareInvitationCopied": "Link copied",
+    "openInvitation": "Open Invitation"
+  },
+  "stats": {
+    "activeEvent": { "label": "Active Event", "value": "1", "meta": "in this workspace" },
+    "invitedGuests": { "label": "Invited Guests", "value": "150", "meta": "total list" },
+    "rsvp": { "label": "RSVP Response", "value": "76%", "meta": "114 confirmed" },
+    "activeExperiences": { "label": "Active Experiences", "value": "4", "meta": "enabled for this event" }
+  },
+  "summary": {
+    "title": "Event Overview",
+    "subtitle": "Main event · October 18 · Chateau Mukhrani",
+    "status": "Active",
+    "details": {
+      "date": { "label": "Date", "value": "October 18, 2026" },
+      "location": { "label": "Location", "value": "Chateau Mukhrani" },
+      "guests": { "label": "Guests", "value": "120 / 150 confirmed" },
+      "readiness": { "label": "Readiness", "value": "80%", "caption": "preparation in progress" }
+    },
+    "experiences": {
+      "title": "Active Experiences",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "items": [
+        { "key": "eventCamera", "label": "Event Camera" },
+        { "key": "gallery", "label": "Gallery" },
+        { "key": "voiceMessages", "label": "Voice Messages" },
+        { "key": "hiddenMoments", "label": "Hidden Moments" },
+        { "key": "letters", "label": "Letters" },
+        { "key": "experiences", "label": "Experiences" }
+      ]
+    }
+  },
+  "guestsPanel": {
+    "title": "Guests",
+    "confirmedPill": "120 confirmed",
+    "table": {
+      "guest": "Guest",
+      "response": "Response",
+      "plusOnes": "Plus-ones",
+      "activity": "Activity"
+    },
+    "rows": [
+      { "name": "Giorgi Kharazishvili", "status": "Confirmed", "tone": "green", "plusOnes": "+1", "activity": "2 photos in gallery" },
+      { "name": "Natia Beridze", "status": "Declined", "tone": "amber", "plusOnes": "-", "activity": "Sent a voice message" },
+      { "name": "Davit Lomidze", "status": "Confirmed", "tone": "green", "plusOnes": "+1", "activity": "Added to hidden moments" },
+      { "name": "Eka Sulakauri", "status": "Pending", "tone": "amber", "plusOnes": "-", "activity": "Opened invitation 2h ago" }
+    ]
+  },
+  "activityPanel": {
+    "title": "Recent Activity",
+    "pill": "Last 24h",
+    "items": [
+      { "text": "Giorgi Kharazishvili confirmed +1 guest", "time": "2h ago", "tone": "green" },
+      { "text": "Natia Beridze declined", "time": "5h ago", "tone": "amber" },
+      { "text": "Davit Lomidze sent a voice message", "time": "1 day ago", "tone": "green" },
+      { "text": "Eka Sulakauri added 2 photos to the gallery", "time": "2 days ago", "tone": "green" }
+    ]
+  },
+  "placeholders": {
+    "eyebrow": "Coming soon",
+    "backToOverview": "Back to overview",
+    "guests": "The full guest list, filters, invitation statuses, and contact details will appear here.",
+    "rsvp": "Detailed RSVP analytics, reminders, and automated notifications.",
+    "eventCamera": "Photos and videos from the event's digital camera will appear here in real time.",
+    "gallery": "The full photo and video gallery, built from everything your guests upload.",
+    "voiceMessages": "Voice greetings and toasts left by your guests.",
+    "hiddenMoments": "The hidden moments archive, unlocked after the event.",
+    "letters": "Personal letters written by guests, collected into one digital keepsake.",
+    "experiences": "Manage and toggle additional experiences from one place.",
+    "settings": "General event settings, access, and security preferences."
+  }
+}

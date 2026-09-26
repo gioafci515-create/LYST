@@ -110,6 +110,17 @@ export function EnvelopeIcon({ className = "" }) {
   );
 }
 
+export function GalleryIcon({ className = "" }) {
+  return (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className={className}>
+      <rect x="2.25" y="2.25" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2" />
+      <rect x="9.75" y="2.25" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2" />
+      <rect x="2.25" y="9.75" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2" />
+      <rect x="9.75" y="9.75" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2" />
+    </svg>
+  );
+}
+
 export function ClockIcon({ className = "" }) {
   return (
     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className={className}>

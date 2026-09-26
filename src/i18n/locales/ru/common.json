@@ -3,6 +3,7 @@
   "nav": {
     "product": "Продукт",
     "invitations": "Приглашения",
+    "experiences": "Впечатления",
     "howItWorks": "Как это работает",
     "pricing": "Цены",
     "about": "О нас"
@@ -19,8 +20,13 @@
         "title": "Цифровые приглашения",
         "items": ["Цифровой стиль", "Интерактивный опыт", "Свой URL", "Общая галерея"]
       },
+      "experiences": {
+        "title": "Впечатления",
+        "items": ["Event Camera", "Disposable Camera Mode", "Voice Guestbook"]
+      },
       "about": { "title": "О нас", "items": ["Наша история", "Лист", "Контакты", "Карьера"] }
     },
+    "quickLinks": { "title": "Быстрые ссылки" },
     "language": "Язык",
     "contact": "Контакты",
     "rights": "© 2026 Lyst. Все права защищены.",
@@ -31,6 +37,7 @@
     "message": "Эта страница скоро появится.",
     "featureDetail": "Детали функции",
     "invitationDetail": "Детали приглашения",
+    "experiences": "Впечатления",
     "create": "Создать приглашение"
   }
 }

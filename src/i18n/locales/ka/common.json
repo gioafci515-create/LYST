@@ -3,6 +3,7 @@
   "nav": {
     "product": "პროდუქტი",
     "invitations": "მოსაწვევები",
+    "experiences": "გამოცდილებები",
     "howItWorks": "როგორ მუშაობს",
     "pricing": "ფასები",
     "about": "ჩვენ შესახებ"
@@ -19,8 +20,13 @@
         "title": "ციფრული მოწვევები",
         "items": ["ციფრული სტილინგი", "ინტერაქტიული გამოცდილებები", "URL-ის არჩევა", "საერთო გალერეა"]
       },
+      "experiences": {
+        "title": "გამოცდილებები",
+        "items": ["Event Camera", "Disposable Camera Mode", "Voice Guestbook"]
+      },
       "about": { "title": "ჩვენ შესახებ", "items": ["ჩვენი ისტორია", "ლისტი", "კონტაქტი", "კარიერა"] }
     },
+    "quickLinks": { "title": "სწრაფი ბმულები" },
     "language": "ენა",
     "contact": "კონტაქტი",
     "rights": "© 2026 Lyst. ყველა უფლება დაცულია.",
@@ -31,6 +37,7 @@
     "message": "ეს გვერდი მალე დაემატება.",
     "featureDetail": "ფუნქციის დეტალები",
     "invitationDetail": "მოსაწვევის დეტალები",
+    "experiences": "გამოცდილებები",
     "create": "შექმენი მოსაწვევი"
   }
 }

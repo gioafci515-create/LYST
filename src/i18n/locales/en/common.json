@@ -3,6 +3,7 @@
   "nav": {
     "product": "Product",
     "invitations": "Invitations",
+    "experiences": "Experiences",
     "howItWorks": "How it works",
     "pricing": "Pricing",
     "about": "About us"
@@ -19,8 +20,13 @@
         "title": "Digital invitations",
         "items": ["Digital styling", "Interactive experiences", "Custom URL", "Shared gallery"]
       },
+      "experiences": {
+        "title": "Experiences",
+        "items": ["Event Camera", "Disposable Camera Mode", "Voice Guestbook"]
+      },
       "about": { "title": "About us", "items": ["Our story", "List", "Contact", "Careers"] }
     },
+    "quickLinks": { "title": "Quick links" },
     "language": "Language",
     "contact": "Contact",
     "rights": "© 2026 Lyst. All rights reserved.",
@@ -31,6 +37,7 @@
     "message": "This page is coming soon.",
     "featureDetail": "Feature details",
     "invitationDetail": "Invitation details",
+    "experiences": "Experiences",
     "create": "Create an invitation"
   }
 }

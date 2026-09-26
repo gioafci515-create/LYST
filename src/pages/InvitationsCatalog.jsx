@@ -19,7 +19,7 @@ const CATEGORY_IDS = [
 
 // Data-only fields (slug/image/categoryId) live in code; display text (name/tag/
 // description) is merged in from the "invitations" namespace at render time.
-const TEMPLATES_META = [
+export const TEMPLATES_META = [
   { slug: "mtvaris-shuki", image: "/images/invitations-1.png", categoryId: "wedding" },
   { slug: "okros-purtslebi", image: "/images/invitations-2.png", categoryId: "birthday" },
   { slug: "minimalisti", image: "/images/invitations-3.png", categoryId: "corporate" },

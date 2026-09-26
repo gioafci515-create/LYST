@@ -54,5 +54,25 @@
   "cta": {
     "viewEdit": "View and edit"
   },
-  "noResults": "No templates in this category yet."
+  "noResults": "No templates in this category yet.",
+  "detail": {
+    "breadcrumbLabel": "Invitations",
+    "eyebrow": "Digital invitation template",
+    "previewLabel": "Digital preview",
+    "previewNote": "The template sets the visual style, typography, and colors. Event details, RSVP, and the guest experience are all handled by the LYST platform.",
+    "digitalFormat": "Digital format",
+    "featuresTitle": "Included with every invitation",
+    "features": [
+      "Personalized text and design",
+      "Instant RSVP response system",
+      "Integrated location map and directions",
+      "Multilingual support for guests",
+      "Event Camera - shared gallery feature",
+      "Voice guestbook for leaving messages"
+    ],
+    "ctaPrimary": "Create with this design",
+    "ctaSecondary": "Full preview",
+    "moreHeading": "Other invitations",
+    "moreViewAll": "View all"
+  }
 }

@@ -41,6 +41,22 @@ import featureDetailKa from "./locales/ka/featureDetail.json";
 import featureDetailEn from "./locales/en/featureDetail.json";
 import featureDetailRu from "./locales/ru/featureDetail.json";
 
+import eventWorkspaceKa from "./locales/ka/eventWorkspace.json";
+import eventWorkspaceEn from "./locales/en/eventWorkspace.json";
+import eventWorkspaceRu from "./locales/ru/eventWorkspace.json";
+
+import dashboardAdminKa from "./locales/ka/dashboardAdmin.json";
+import dashboardAdminEn from "./locales/en/dashboardAdmin.json";
+import dashboardAdminRu from "./locales/ru/dashboardAdmin.json";
+
+import dashboardHostKa from "./locales/ka/dashboardHost.json";
+import dashboardHostEn from "./locales/en/dashboardHost.json";
+import dashboardHostRu from "./locales/ru/dashboardHost.json";
+
+import createWizardKa from "./locales/ka/createWizard.json";
+import createWizardEn from "./locales/en/createWizard.json";
+import createWizardRu from "./locales/ru/createWizard.json";
+
 export const SUPPORTED_LANGUAGES = [
   { code: "ka", label: "ქა" },
   { code: "en", label: "EN" },
@@ -58,6 +74,10 @@ const NAMESPACES = [
   "howItWorks",
   "invitations",
   "featureDetail",
+  "eventWorkspace",
+  "dashboardAdmin",
+  "dashboardHost",
+  "createWizard",
 ];
 
 const STORAGE_KEY = "lyst-language";
@@ -82,6 +102,10 @@ i18n.use(initReactI18next).init({
       howItWorks: howItWorksKa,
       invitations: invitationsKa,
       featureDetail: featureDetailKa,
+      eventWorkspace: eventWorkspaceKa,
+      dashboardAdmin: dashboardAdminKa,
+      dashboardHost: dashboardHostKa,
+      createWizard: createWizardKa,
     },
     en: {
       common: commonEn,
@@ -94,6 +118,10 @@ i18n.use(initReactI18next).init({
       howItWorks: howItWorksEn,
       invitations: invitationsEn,
       featureDetail: featureDetailEn,
+      eventWorkspace: eventWorkspaceEn,
+      dashboardAdmin: dashboardAdminEn,
+      dashboardHost: dashboardHostEn,
+      createWizard: createWizardEn,
     },
     ru: {
       common: commonRu,
@@ -106,6 +134,10 @@ i18n.use(initReactI18next).init({
       howItWorks: howItWorksRu,
       invitations: invitationsRu,
       featureDetail: featureDetailRu,
+      eventWorkspace: eventWorkspaceRu,
+      dashboardAdmin: dashboardAdminRu,
+      dashboardHost: dashboardHostRu,
+      createWizard: createWizardRu,
     },
   },
   lng: getInitialLanguage(),

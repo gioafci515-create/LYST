@@ -1,0 +1,237 @@
+{
+  "nav": {
+    "badge": "Create",
+    "saveExit": "Save and exit",
+    "draftSaved": "Draft saved",
+    "saveDraft": "Save as draft",
+    "back": "Back",
+    "next": "Continue",
+    "publish": "Publish",
+    "steps": {
+      "type": "Type",
+      "style": "Style",
+      "details": "Details",
+      "guests": "Guests",
+      "features": "Features",
+      "preview": "Preview",
+      "finish": "Finish"
+    }
+  },
+  "step1": {
+    "eyebrow": "Step 01",
+    "title": "Choose your event type",
+    "types": {
+      "wedding": "Wedding",
+      "birthday": "Birthday",
+      "dinner": "Private Dinner",
+      "corporate": "Corporate Event",
+      "charity": "Charity Event",
+      "other": "Other"
+    }
+  },
+  "step2": {
+    "eyebrow": "Step 02",
+    "title": "Digital Invitation Style",
+    "filters": {
+      "digital": "Digital Invitation",
+      "interactive": "Interactive"
+    },
+    "mock": {
+      "url": "lyst.ge/invitation",
+      "eventName": "Georgia Day",
+      "dateLabel": "Date",
+      "dateValue": "May 26",
+      "timeLabel": "Time",
+      "timeValue": "19:00",
+      "locationLabel": "Location",
+      "locationValue": "Tbilisi",
+      "rsvp": "RSVP"
+    },
+    "templates": {
+      "modernBrowser": "Modern Browser",
+      "minimalBrowser": "Minimal Browser",
+      "classicBrowser": "Classic Browser",
+      "modernArchive": "Modern Archive"
+    },
+    "kickerDigital": "DIGITAL",
+    "kickerInteractive": "INTERACTIVE"
+  },
+  "step3": {
+    "eyebrow": "Step 03",
+    "title": "Event details",
+    "name": {
+      "label": "Event name",
+      "hint": "Automatically filled based on the selected event type.",
+      "badge": "Auto"
+    },
+    "schedule": {
+      "label": "Date and time",
+      "hint": "Choose the planned date and preferred time window."
+    },
+    "date": { "label": "Date", "badge": "Required" },
+    "time": { "label": "Time", "badge": "Required" },
+    "location": {
+      "label": "Location",
+      "hint": "Choose the address or venue for directions and navigation.",
+      "badge": "Required",
+      "placeholder": "Chateau Mukhrani"
+    },
+    "dressCode": {
+      "label": "Dress Code",
+      "hint": "The chosen dress code is used to set guest expectations.",
+      "fieldLabel": "Dress code",
+      "badge": "Required",
+      "placeholder": "Casual attire"
+    },
+    "description": {
+      "label": "Description / Wishes",
+      "hint": "Add a short description or wishes to prepare your guests for the event.",
+      "badge": "Optional",
+      "placeholder": "Please join us to celebrate the most important day of our lives."
+    },
+    "additional": {
+      "label": "Additional details",
+      "hint": "Add extra information guests will need to prepare for the event.",
+      "badge": "Optional",
+      "placeholder": "Dinner info, hotel recommendations, parking, or other notes."
+    },
+    "autoNames": {
+      "wedding": "Luka & Tamar's Wedding",
+      "birthday": "Birthday Celebration",
+      "dinner": "Private Dinner",
+      "corporate": "Corporate Event",
+      "charity": "Charity Evening",
+      "other": "My Event"
+    }
+  },
+  "step4": {
+    "eyebrow": "Step 04",
+    "title": "Attendance logic",
+    "maxGuests": {
+      "title": "Maximum number of guests",
+      "description": "Set the total guest cap for your event"
+    },
+    "plusOne": {
+      "title": "Allow +1 guests",
+      "description": "Let guests add a companion when confirming attendance"
+    },
+    "rsvpDeadline": {
+      "title": "RSVP Deadline",
+      "description": "The deadline by which a guest must confirm attendance"
+    },
+    "autoReminders": {
+      "title": "Automatic reminder sending",
+      "description": "Guests who haven't responded yet will get a reminder 3 days before the deadline"
+    },
+    "guestsUnit": "guests"
+  },
+  "step5": {
+    "eyebrow": "Step 05",
+    "title": "Choose your event experiences",
+    "coreNote": "Digital invitation, event info, and RSVP are core features and are available without activation.",
+    "coreTag": "Included",
+    "core": {
+      "invite": {
+        "title": "Digital Invitation",
+        "description": "Guests receive a mobile-optimized invitation with the event details."
+      },
+      "info": {
+        "title": "Event Information",
+        "description": "Event details, address, and other important information in one place."
+      },
+      "rsvp": {
+        "title": "RSVP",
+        "description": "Guests can easily confirm their attendance at the event."
+      }
+    },
+    "optionalTitle": "Optional event experiences",
+    "optionalHint": "Choose the extra features that will be available to guests on the event link.",
+    "optional": {
+      "eventCamera": { "title": "Event Camera", "description": "Guests upload photos directly from the event link." },
+      "voiceGuestbook": { "title": "Voice Guestbook", "description": "Guests can leave voice greetings straight from their phone." },
+      "hiddenMoments": { "title": "Hidden Moments", "description": "Photos stay hidden until 9:00 AM the next day to keep the surprise." },
+      "lettersFromRoom": { "title": "Letters From the Room", "description": "Interactive prompts and letters for guests during the event." },
+      "timeCapsule": { "title": "Time Capsule", "description": "Automatically archives and stores created content for years to come." },
+      "sharedGallery": { "title": "Shared Gallery", "description": "Guests can view and download photos taken by one another." },
+      "messageForLater": { "title": "Message for Later", "description": "Guests can leave messages that get delivered at a later time." }
+    }
+  },
+  "step6": {
+    "eyebrow": "Step 06",
+    "title": "Preview your invitation",
+    "phone": {
+      "hostsPrefix": "Hosted by: ",
+      "rsvpButton": "I'll be there"
+    },
+    "guestSees": {
+      "title": "What the guest sees",
+      "description": "The digital invitation sent to the guest's phone and the experience available to them.",
+      "address": { "title": "Address", "value": "Digital invitation sent to their phone" },
+      "reception": { "title": "Reception", "value": "Guest sees it on their phone and confirms their status instantly" },
+      "experience": { "title": "Experience", "value": "Photos, voice messages, and shared gallery" }
+    },
+    "overview": {
+      "title": "Quick overview",
+      "description": "The guest sees the mobile invitation and the experience available to them.",
+      "event": "Event",
+      "dateTime": "Date and time",
+      "location": "Location",
+      "guestLimit": "Guest limit",
+      "reception": "Reception",
+      "experience": "Experience",
+      "plusOneAllowed": "(+1 guests allowed)",
+      "plusOneNotAllowed": "(+1 guests not allowed)"
+    },
+    "activated": {
+      "title": "Activated experience",
+      "description": "The guest sees the mobile invitation and the experience available to them.",
+      "mobileInvite": "Mobile invitation",
+      "photos": "Photos",
+      "voiceMessages": "Voice messages",
+      "sharedGallery": "Shared gallery",
+      "hiddenMoments": "Hidden moments",
+      "letters": "Letters",
+      "timeCapsule": "Time capsule",
+      "messageForLater": "Message for later"
+    }
+  },
+  "step7": {
+    "eyebrow": "Step 07",
+    "title": "Publish",
+    "package": {
+      "title": "Package",
+      "name": "Premium Invitation ({{type}})",
+      "price": "Price on request",
+      "perk1": "Includes unlimited guests and statistics",
+      "perk2": "Unique link and guest management"
+    },
+    "paymentMethod": {
+      "title": "Payment method",
+      "card": "Pay by bank card"
+    },
+    "summary": {
+      "title": "Final summary",
+      "event": "Event",
+      "date": "Date",
+      "location": "Location",
+      "guests": "Guests",
+      "guestsUnit": "guests",
+      "features": "Features"
+    },
+    "before": {
+      "title": "Ready to publish?",
+      "description": "Click \"Publish\" to activate your invitation and generate a unique link."
+    },
+    "publishing": "Publishing...",
+    "success": {
+      "title": "Your invitation is ready.",
+      "subtitle": "Published and ready to share.",
+      "urlLabel": "Unique URL",
+      "copy": "Copy link",
+      "copied": "Copied",
+      "share": "Share invitation",
+      "open": "Open invitation",
+      "dashboard": "Go to dashboard"
+    }
+  }
+}

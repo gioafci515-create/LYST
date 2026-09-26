@@ -11,6 +11,7 @@ export default function Header() {
   const navLinks = [
     { label: t("nav.product"), to: "/product" },
     { label: t("nav.invitations"), to: "/invitations" },
+    { label: t("nav.experiences"), to: "/experiences" },
     { label: t("nav.howItWorks"), to: "/how-it-works" },
     { label: t("nav.pricing"), to: "/pricing" },
     { label: t("nav.about"), to: "/about" },

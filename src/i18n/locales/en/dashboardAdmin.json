@@ -1,0 +1,86 @@
+{
+  "sidebar": {
+    "wordmark": "Lyst.",
+    "badge": "SUPER",
+    "nav": {
+      "home": "Home",
+      "orders": "Orders",
+      "clients": "Clients",
+      "events": "Events",
+      "analytics": "Analytics",
+      "finance": "Finance",
+      "team": "Team",
+      "settings": "Settings"
+    },
+    "user": {
+      "name": "Aleksandre",
+      "role": "Administrator"
+    }
+  },
+  "topbar": {
+    "title": "Super Admin Panel",
+    "subtitle": "LYST platform revenue, subscriptions, events, clients, and operational monitoring",
+    "searchPlaceholder": "Search...",
+    "dateLabel": "September 2026"
+  },
+  "stats": {
+    "revenue": { "label": "Total revenue", "value": "₾47,850", "trend": "+12.5%" },
+    "activePlans": { "label": "Active plans / subscriptions", "value": "234", "trend": "+8.1%" },
+    "publishedEvents": { "label": "Published events", "value": "1,847", "trend": "+15.3%" },
+    "activeEvents": { "label": "Active events", "value": "156" },
+    "trendCompare": "vs. previous month"
+  },
+  "chart": {
+    "title": "Revenue dynamics",
+    "subtitle": "Comparative analysis of the last 4 months (₾)",
+    "badge": "Total growth +12.5%",
+    "months": {
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep"
+    }
+  },
+  "activity": {
+    "title": "Recent activity",
+    "items": [
+      { "name": "Nino Gogiashvili", "time": "3 minutes ago", "action": "Published a new event “Jazz Fest 2026”" },
+      { "name": "Giorgi Kharazishvili", "time": "14 minutes ago", "action": "Requested a duplicate invoice" },
+      { "name": "Davit Lomidze", "time": "1 hour ago", "action": "Registered a new company on the platform" },
+      { "name": "Mariam Tsiklauri", "time": "2 hours ago", "action": "Updated the event package and payment method" },
+      { "name": "Ana Janelidze", "time": "4 hours ago", "action": "Updated the contact phone number" }
+    ]
+  },
+  "notifications": {
+    "title": "Notifications"
+  },
+  "table": {
+    "title": "Recent orders",
+    "viewAll": "View all",
+    "noResults": "No results found",
+    "headers": {
+      "id": "#",
+      "client": "Client",
+      "event": "Event / Service",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "processing": "Processing",
+      "completed": "Completed"
+    },
+    "rows": [
+      { "id": "#1094", "client": "Nino Gogiashvili", "event": "Tbilisi Jazz Festival 2026", "date": "Sep 15, 2026", "amount": "₾350.00", "status": "confirmed" },
+      { "id": "#1095", "client": "Giorgi Kharazishvili", "event": "Business Conference", "date": "Sep 15, 2026", "amount": "₾120.00", "status": "processing" },
+      { "id": "#1096", "client": "Mariam Tsiklauri", "event": "Wine Tasting Tour", "date": "Sep 14, 2026", "amount": "₾480.00", "status": "completed" },
+      { "id": "#1097", "client": "Davit Lomidze", "event": "Electronic Music Night", "date": "Sep 14, 2026", "amount": "₾180.00", "status": "confirmed" },
+      { "id": "#1098", "client": "Ana Janelidze", "event": "Classical Concert Series", "date": "Sep 13, 2026", "amount": "₾250.00", "status": "processing" }
+    ]
+  },
+  "placeholder": {
+    "title": "{{section}} — coming soon",
+    "body": "This section is currently in development and will be available soon."
+  }
+}

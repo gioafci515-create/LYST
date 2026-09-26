@@ -1,0 +1,129 @@
+{
+  "badge": "Account",
+  "nav": {
+    "account": "Account",
+    "events": "Events",
+    "guests": "Guests",
+    "rsvp": "RSVP Responses",
+    "photos": "Photos",
+    "voice": "Voice Messages",
+    "hidden": "Hidden Moments",
+    "letters": "Letters",
+    "settings": "Settings"
+  },
+  "profile": {
+    "name": "Luka Beridze",
+    "role": "User"
+  },
+  "overview": {
+    "title": "Account Overview",
+    "subtitle": "Add a new event and keep track of active, upcoming, and planned events.",
+    "newEvent": "New Event +",
+    "stats": {
+      "active": { "label": "Active Events", "value": "3", "pill": "Active now" },
+      "upcoming": { "label": "Upcoming Events", "value": "2", "pill": "In the next 18 days" },
+      "planned": { "label": "Planned Events", "value": "1", "pill": "In December" },
+      "guests": { "label": "Total Guests", "value": "365", "pill": "Across 5 events" }
+    },
+    "events": {
+      "title": "Events",
+      "count": "5 events",
+      "activeLabel": "Active",
+      "upcomingLabel": "Upcoming",
+      "statusActive": "Active",
+      "statusInProgress": "In progress",
+      "statusPlanned": "Planned",
+      "items": [
+        {
+          "title": "Luka & Tamar's Wedding",
+          "subtitle": "Wedding ceremony and reception",
+          "date": "Oct 18, 2026",
+          "location": "Chateau Mukhrani",
+          "guests": "120 / 150 guests",
+          "status": "active"
+        },
+        {
+          "title": "Nika & Ana's Wedding Evening",
+          "subtitle": "Evening reception and dinner",
+          "date": "Oct 25, 2026",
+          "location": "Veranda Residence",
+          "guests": "78 / 90 guests",
+          "status": "active"
+        },
+        {
+          "title": "Saba & Nino's Wedding Ceremony",
+          "subtitle": "Wedding ceremony and reception",
+          "date": "Nov 1, 2026",
+          "location": "Mukhrani Palace",
+          "guests": "92 / 110 guests",
+          "status": "active"
+        },
+        {
+          "title": "Ana's Birthday",
+          "subtitle": "Birthday party and dinner",
+          "date": "Nov 5, 2026",
+          "location": "Home yard",
+          "guests": "45 guests",
+          "status": "inProgress"
+        },
+        {
+          "title": "Corporate Party",
+          "subtitle": "Company anniversary and team gathering",
+          "date": "Dec 20, 2026",
+          "location": "Conference Hall",
+          "guests": "200 guests",
+          "status": "planned"
+        }
+      ]
+    },
+    "rsvp": {
+      "title": "Recent RSVP Responses",
+      "subtitle": "Last 24 hours",
+      "items": [
+        {
+          "name": "Giorgi Kharazishvili",
+          "action": "Confirmed attendance",
+          "time": "2h ago",
+          "tag": "Attending",
+          "tone": "green"
+        },
+        {
+          "name": "Natia Beridze",
+          "action": "Declined the invitation",
+          "time": "5h ago",
+          "tag": "Declined",
+          "tone": "red"
+        },
+        {
+          "name": "Davit Lomidze",
+          "action": "Confirmed attendance (+1)",
+          "time": "Yesterday",
+          "tag": "Attending",
+          "tone": "green"
+        },
+        {
+          "name": "Eka Sulakauri",
+          "action": "Confirmed attendance",
+          "time": "Yesterday",
+          "tag": "Attending",
+          "tone": "green"
+        },
+        {
+          "name": "Ana Janelidze",
+          "action": "Hasn't responded yet",
+          "time": "2 days ago",
+          "tag": "Pending",
+          "tone": "amber"
+        }
+      ]
+    }
+  },
+  "placeholder": {
+    "body": "This section is coming soon."
+  },
+  "newEventModal": {
+    "title": "Create New Event",
+    "body": "Event creation isn't available in this preview yet — check back soon.",
+    "close": "Close"
+  }
+}

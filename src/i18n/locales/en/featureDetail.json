@@ -36,5 +36,101 @@
       { "title": "Open on your own time", "body": "The collection can open on the event day or later — your call." }
     ],
     "imageAlt": "A guest writing a private letter at the event"
+  },
+  "disposableCamera": {
+    "category": "Event Experience",
+    "title": "Disposable Camera Mode",
+    "tagline": "Retro shots, zero fuss.",
+    "description": "Guests shoot photos in a playful disposable-camera style, right from the browser — grainy filter, shutter sound, and all. Every shot merges into the shared gallery the moment it's taken, so the whole night builds into a living reel in real time.",
+    "highlights": [
+      { "title": "One tap, one frame", "body": "No settings to fuss over — guests just point, shoot, and get back to the party." },
+      { "title": "Instant gallery merge", "body": "Every photo lands in the shared collection automatically, no separate upload step." },
+      { "title": "Authentic, unfiltered", "body": "The nostalgic camera effect captures the night's mood exactly as it felt in the room." }
+    ],
+    "imageAlt": "Guests toasting while a disposable camera captures the moment"
+  },
+  "hiddenMoments": {
+    "category": "Event Experience",
+    "title": "Hidden Moments",
+    "tagline": "Some moments are worth the wait.",
+    "description": "Guests and hosts can tuck away photos, videos, or notes that stay hidden until a moment you choose — a birthday, an anniversary, or any date that matters. What's captured tonight quietly waits to resurface exactly when it should.",
+    "highlights": [
+      { "title": "Set your own reveal date", "body": "Choose any future date or occasion, and the moment stays locked until it arrives." },
+      { "title": "Layered surprises", "body": "Multiple hidden moments can unlock at different times, spacing the joy out over time." },
+      { "title": "A private time capsule", "body": "Only the people you choose can see each moment once it unlocks." }
+    ],
+    "imageAlt": "A couple sharing a quiet, private moment at the event"
+  },
+  "livePolls": {
+    "category": "Event Experience",
+    "title": "Live Event Polls",
+    "tagline": "Let the guests steer the night.",
+    "description": "Guests vote in real time on the music, the next toast, or the mood of the room — straight from their phones. Results appear on screen instantly, turning every table into part of the show.",
+    "highlights": [
+      { "title": "Vote from any phone", "body": "No app, no login — guests open the link and cast their vote in seconds." },
+      { "title": "Instant live results", "body": "Answers update on screen in real time as votes come in." },
+      { "title": "Fully customizable questions", "body": "Hosts create polls about music, moments, or anything worth asking the room." }
+    ],
+    "imageAlt": "Guests enjoying a lively celebration together"
+  },
+  "sharedGallery": {
+    "category": "Remember",
+    "title": "Shared Gallery",
+    "tagline": "Every angle, one gallery.",
+    "description": "Every photo and video captured by every guest — from every camera and every feature — flows into a single, beautifully organized gallery. No more piecing memories together from a dozen phones after the fact.",
+    "highlights": [
+      { "title": "One gallery, every guest", "body": "Shots from Event Camera, Disposable Mode, and uploads all collect in one place automatically." },
+      { "title": "Sort and browse with ease", "body": "Filter by time, favorites, or contributor to relive the night the way you want." },
+      { "title": "Download the whole night", "body": "Hosts can export the complete collection in one click, ready to keep forever." }
+    ],
+    "imageAlt": "Guests gathered together at a rooftop celebration"
+  },
+  "messageForLater": {
+    "category": "Remember",
+    "title": "Message for Later",
+    "tagline": "A little suspense makes memories sweeter.",
+    "description": "Photos and messages from the event stay locked until 9:00 AM the next morning, so the night ends on a cliffhanger instead of a scroll. When the gallery finally unlocks, guests wake up to the whole story at once.",
+    "highlights": [
+      { "title": "Built-in anticipation", "body": "Everything captured during the event stays sealed until the reveal time." },
+      { "title": "One shared unlock moment", "body": "All guests see the gallery open together the next morning, not staggered." },
+      { "title": "Worth the wait", "body": "The delay turns ordinary photos into a proper morning-after surprise." }
+    ],
+    "imageAlt": "A guest handing over a keepsake message at the event"
+  },
+  "timeCapsule": {
+    "category": "Remember",
+    "title": "Digital Time Capsule",
+    "tagline": "Written today, opened years from now.",
+    "description": "Guests leave letters, photos, and videos sealed inside a digital time capsule that opens on a date you choose — a first anniversary, a milestone birthday, or any day worth waiting for. What's said tonight arrives exactly when it matters most.",
+    "highlights": [
+      { "title": "Choose the opening date", "body": "Set any future date, from one year out to a decade, and the capsule stays sealed until then." },
+      { "title": "Every format welcome", "body": "Letters, photos, and videos all live together inside the same capsule." },
+      { "title": "A reminder, right on time", "body": "Everyone gets notified the moment the capsule is ready to open." }
+    ],
+    "imageAlt": "A couple embracing at their celebration, a memory to open later"
+  },
+  "videoMessages": {
+    "category": "Remember",
+    "title": "Video Messages",
+    "tagline": "Say it on camera, keep it forever.",
+    "description": "Guests record short video greetings and toasts straight from their phones — no camera crew required. Every clip is stitched into one shared archive the host can revisit anytime.",
+    "highlights": [
+      { "title": "Record in seconds", "body": "Guests tap record, say their piece, and send — right from the event link." },
+      { "title": "One shared reel", "body": "All video messages collect into a single archive, organized and ready to watch." },
+      { "title": "Relive it anytime", "body": "Hosts can rewatch, download, or share every message long after the event ends." }
+    ],
+    "imageAlt": "A digital invitation displayed across devices, ready for video messages"
+  },
+  "eventArchive": {
+    "category": "Remember",
+    "title": "Event Archive",
+    "tagline": "Everything from the night, kept for good.",
+    "description": "After the event ends, every photo, message, and memory collects into one lasting digital archive — organized, searchable, and safe for years to come. Nothing gets lost in a camera roll or forgotten in a group chat.",
+    "highlights": [
+      { "title": "Everything in one place", "body": "Photos, voice messages, letters, and videos all live together in a single archive." },
+      { "title": "Built to last", "body": "The archive stays accessible for years, long after the event is over." },
+      { "title": "Easy to revisit and share", "body": "Hosts can browse, export, or share the full archive anytime they like." }
+    ],
+    "imageAlt": "An elegant candlelit table setting, a memory preserved from the event"
   }
 }

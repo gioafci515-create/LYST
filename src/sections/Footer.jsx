@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { SUPPORTED_LANGUAGES } from "../i18n";
@@ -30,11 +31,16 @@ const SOCIALS = [
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
-  const columns = ["product", "features", "invitations", "about"].map((key) => ({
+  const columns = ["product", "features", "invitations", "experiences", "about"].map((key) => ({
     key,
     title: t(`footer.columns.${key}.title`),
     items: t(`footer.columns.${key}.items`, { returnObjects: true }),
   }));
+  const quickLinks = [
+    { label: t("nav.howItWorks"), to: "/how-it-works" },
+    { label: t("nav.pricing"), to: "/pricing" },
+    { label: t("login"), to: "/login" },
+  ];
 
   return (
     <footer className="flex w-full flex-col items-center bg-black">
@@ -58,6 +64,17 @@ export default function Footer() {
               </div>
             </div>
           ))}
+
+          <div className="flex w-[140px] flex-col items-start gap-5">
+            <p className="text-xs font-semibold text-white">{t("footer.quickLinks.title")}</p>
+            <div className="flex flex-col items-start gap-3">
+              {quickLinks.map(({ label, to }) => (
+                <Link key={to} to={to} className="text-[13px] text-muted-2 hover:text-white">
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-1 min-w-[200px] flex-col items-start gap-6">
