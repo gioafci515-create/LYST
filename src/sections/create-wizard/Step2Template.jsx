@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { EASE, DURATION, TIMING } from "../../lib/motion";
 import { XCircleIcon } from "./icons";
 
 const TEMPLATE_IDS = ["modernBrowser", "minimalBrowser", "classicBrowser", "modernArchive"];
@@ -84,8 +85,8 @@ export default function Step2Template({ data, updateData }) {
               <motion.button
                 key={id}
                 type="button"
-                whileHover={{ scale: 1.012 }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={{ scale: 1.012, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
+                whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
                 onClick={() => updateData({ template: id })}
                 aria-pressed={selected}
                 className={`flex flex-col gap-4 rounded-xl border p-3 text-left transition-colors ${

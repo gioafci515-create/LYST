@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { EASE, DURATION, TIMING } from "../../lib/motion";
 import {
   BellIcon,
   CakeIcon,
@@ -33,8 +34,8 @@ export default function Step1EventType({ data, updateData }) {
             <motion.button
               key={id}
               type="button"
-              whileHover={{ scale: 1.015 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{ scale: 1.015, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
+              whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
               onClick={() => updateData({ eventType: id })}
               aria-pressed={selected}
               className={`flex items-center gap-4 rounded-xl border p-6 text-left transition-colors ${

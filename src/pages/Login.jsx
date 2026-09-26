@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import Reveal from "../components/Reveal";
+import { EASE, TIMING } from "../lib/motion";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MIN_PASSWORD_LENGTH = 6;
@@ -130,8 +131,16 @@ export default function Login() {
                   <motion.button
                     type="submit"
                     disabled={submitting}
-                    whileHover={submitting ? undefined : { scale: 1.02 }}
-                    whileTap={submitting ? undefined : { scale: 0.97 }}
+                    whileHover={
+                      submitting
+                        ? undefined
+                        : { scale: 1.02, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }
+                    }
+                    whileTap={
+                      submitting
+                        ? undefined
+                        : { scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }
+                    }
                     className="w-full rounded-lg bg-black p-4 text-center text-sm font-semibold text-white transition-colors hover:bg-ink-soft disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {submitting ? t("submitting") : t("submit")}

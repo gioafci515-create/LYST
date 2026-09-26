@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 function ChevronIcon({ open }) {
   return (
@@ -49,7 +50,7 @@ export default function PricingFaq() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                        transition={{ duration: TIMING.accordionExpand, ease: EASE }}
                         className="overflow-hidden"
                       >
                         <p className="mt-4 text-sm leading-[1.5] text-muted">{faq.answer}</p>

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import DashboardSidebar, { NAV_ITEMS } from "../components/DashboardSidebar";
 import { CalendarIcon, MapPinIcon, UsersIcon, XIcon } from "../components/dashboardIcons";
 import Reveal from "../components/Reveal";
+import { EASE, TIMING } from "../lib/motion";
 
 const STAT_KEYS = ["active", "upcoming", "planned", "guests"];
 
@@ -130,8 +131,8 @@ function AccountOverview() {
         </div>
         <motion.button
           type="button"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.97 }}
+          whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+          whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
           onClick={() => setShowNewEventModal(true)}
           className="flex items-center gap-2 rounded-[10px] bg-black px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
         >
@@ -192,6 +193,7 @@ function AccountOverview() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: TIMING.modalOpen, ease: EASE }}
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-6"
             onClick={() => setShowNewEventModal(false)}
           >
@@ -199,7 +201,7 @@ function AccountOverview() {
               initial={{ opacity: 0, y: 16, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 16, scale: 0.98 }}
-              transition={{ duration: 0.2 }}
+              transition={{ duration: TIMING.modalOpen, ease: EASE }}
               onClick={(e) => e.stopPropagation()}
               className="flex w-[420px] max-w-full flex-col gap-4 rounded-xl bg-white p-6"
             >
@@ -217,8 +219,8 @@ function AccountOverview() {
               <p className="text-sm leading-6 text-muted">{t("newEventModal.body")}</p>
               <motion.button
                 type="button"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+                whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 onClick={() => setShowNewEventModal(false)}
                 className="self-start rounded-lg border border-line px-4 py-2 text-sm font-semibold text-black hover:bg-surface"
               >

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { EASE, TIMING } from "../../lib/motion";
 
 export default function Toggle({ checked, onChange, label, disabled = false }) {
   return (
@@ -8,7 +9,7 @@ export default function Toggle({ checked, onChange, label, disabled = false }) {
       aria-checked={checked}
       aria-label={label}
       disabled={disabled}
-      whileTap={disabled ? undefined : { scale: 0.95 }}
+      whileTap={disabled ? undefined : { scale: 0.95, transition: { duration: TIMING.toggle, ease: EASE } }}
       onClick={() => !disabled && onChange(!checked)}
       className={`flex h-6 w-11 shrink-0 items-center rounded-full p-0.5 outline-none transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-dashed focus-visible:outline-black focus-visible:outline-offset-2 ${
         checked ? "justify-end bg-black" : "justify-start bg-line"
@@ -16,7 +17,7 @@ export default function Toggle({ checked, onChange, label, disabled = false }) {
     >
       <motion.span
         layout
-        transition={{ type: "spring", stiffness: 500, damping: 32 }}
+        transition={{ duration: TIMING.toggle, ease: EASE }}
         className="size-5 rounded-full bg-white shadow"
       />
     </motion.button>

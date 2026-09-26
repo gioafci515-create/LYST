@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 export default function ProductExperience() {
   const { t } = useTranslation("product");
@@ -20,7 +21,7 @@ export default function ProductExperience() {
 
         <Reveal
           direction="left"
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.02, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
           className="flex w-[733px] max-w-full flex-col items-start gap-5 rounded-xl border border-line bg-white p-6"
         >
           <p className="font-display text-lg font-bold text-black">{t("experience.card.title")}</p>

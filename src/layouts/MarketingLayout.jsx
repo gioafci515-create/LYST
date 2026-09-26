@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
+import { EASE, DURATION } from "../lib/motion";
 
 export default function MarketingLayout() {
   const location = useLocation();
@@ -17,7 +18,7 @@ export default function MarketingLayout() {
             initial={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, y: -16 }}
-            transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: DURATION.standard, ease: EASE }}
             className="flex w-full flex-col items-start"
           >
             <Outlet />

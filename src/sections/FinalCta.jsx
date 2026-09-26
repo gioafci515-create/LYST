@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
+import { EASE, TIMING } from "../lib/motion";
 
 export default function FinalCta() {
   const { t } = useTranslation("home");
@@ -17,8 +18,8 @@ export default function FinalCta() {
         <Reveal direction="up" delay={0.1}>
           <motion.button
             type="button"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.97 }}
+            whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+            whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
             className="bg-black px-10 py-5 text-sm font-semibold text-white hover:bg-ink-soft"
           >
             {t("finalCta.cta")}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
+import { EASE, DURATION } from "../lib/motion";
 
 export default function ClosingMoments() {
   const { t } = useTranslation("home");
@@ -35,7 +36,7 @@ export default function ClosingMoments() {
                   initial={{ opacity: 0, x: 28 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ duration: DURATION.editorial, delay: i * 0.08, ease: EASE }}
                   className="flex w-full items-center gap-4"
                 >
                   <span className="h-px w-2 shrink-0 bg-white" />

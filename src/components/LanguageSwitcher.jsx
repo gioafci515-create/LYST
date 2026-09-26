@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { SUPPORTED_LANGUAGES } from "../i18n";
+import { EASE, TIMING, DURATION } from "../lib/motion";
 
 export default function LanguageSwitcher({ className = "", layoutId = "active-language-pill" }) {
   const { i18n } = useTranslation();
@@ -21,13 +22,13 @@ export default function LanguageSwitcher({ className = "", layoutId = "active-la
             {isActive && (
               <motion.span
                 layoutId={layoutId}
-                transition={{ type: "spring", stiffness: 500, damping: 32 }}
+                transition={{ duration: TIMING.toggle, ease: EASE }}
                 className="absolute inset-0 rounded-full bg-black"
               />
             )}
             <motion.span
-              whileHover={isActive ? undefined : { scale: 1.08 }}
-              whileTap={{ scale: 0.92 }}
+              whileHover={isActive ? undefined : { scale: 1.08, transition: { duration: DURATION.instant, ease: EASE } }}
+              whileTap={{ scale: 0.92, transition: { duration: DURATION.instant, ease: EASE } }}
               className={`relative z-10 block transition-colors duration-200 ${
                 isActive ? "text-white" : "text-muted hover:text-black"
               }`}

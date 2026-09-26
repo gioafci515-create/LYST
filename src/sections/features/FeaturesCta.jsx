@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 export default function FeaturesCta() {
   const { t } = useTranslation("features");
@@ -16,7 +17,10 @@ export default function FeaturesCta() {
           <p className="w-[624px] max-w-full text-base leading-[1.6] text-muted">{t("cta.description")}</p>
         </Reveal>
         <Reveal direction="up" delay={0.1}>
-          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+          <motion.div
+            whileHover={{ scale: 1.03, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+            whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
+          >
             <Link
               to="/create"
               className="rounded-[10px] bg-black px-8 py-4 text-[15px] font-semibold text-white transition-colors hover:bg-ink-soft"

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
 import UnderlineLink from "../components/UnderlineLink";
+import { EASE, DURATION, TIMING } from "../lib/motion";
 
 function MicIcon() {
   return (
@@ -60,6 +61,7 @@ export default function FeatureShowcase() {
               type="button"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
+              transition={{ duration: TIMING.toggle, ease: EASE }}
               onClick={() => setActivePill(i)}
               aria-pressed={activePill === i}
               className={`rounded-full border border-line-soft px-5 py-3 text-[13px] font-bold transition-colors ${
@@ -77,6 +79,7 @@ export default function FeatureShowcase() {
               <motion.div
                 key={note.name}
                 whileHover={{ scale: 1.01 }}
+                transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
                 className="flex w-full flex-wrap items-center gap-6 rounded-[10px] border border-line bg-surface p-6"
               >
                 <MicIcon />
@@ -104,12 +107,12 @@ export default function FeatureShowcase() {
               type="button"
               onClick={() => setIsRecording((prev) => !prev)}
               aria-pressed={isRecording}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.95, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
               animate={isRecording ? { scale: [1, 1.06, 1] } : { scale: 1 }}
               transition={
                 isRecording
                   ? { duration: 1.2, repeat: Infinity, ease: "easeInOut" }
-                  : { duration: 0.3 }
+                  : { duration: DURATION.instant, ease: EASE }
               }
               className="flex size-24 items-center justify-center rounded-full outline outline-2 -outline-offset-2 outline-ink-soft"
             >

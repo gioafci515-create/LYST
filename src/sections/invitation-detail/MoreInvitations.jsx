@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, DURATION, TIMING } from "../../lib/motion";
 
 function ArrowRightIcon() {
   return (
@@ -46,11 +47,18 @@ export default function MoreInvitations({ templates, currentSlug }) {
             <motion.div
               key={template.slug}
               initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: TIMING.invitationCardHover, ease: EASE, delay: index * 0.05 },
+              }}
               viewport={{ once: true, amount: 0.2 }}
-              whileHover={{ y: -4, scale: 1.01 }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.45, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
+              whileHover={{
+                y: -4,
+                scale: 1.01,
+                transition: { duration: TIMING.invitationCardHover, ease: EASE },
+              }}
+              whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
               className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-4"
             >
               <img

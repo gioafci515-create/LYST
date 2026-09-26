@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { CameraIcon, ClockIcon, MicIcon } from "./icons";
 import Reveal from "../../components/Reveal";
+import { EASE, DURATION, TIMING } from "../../lib/motion";
 
 const FEATURES = [
   { icon: CameraIcon, to: "/features/event-camera" },
@@ -33,7 +34,11 @@ export default function FeaturesExperience() {
             const card = cards[i];
             return (
               <Reveal key={to} direction="up" delay={Math.min(i * 0.08, 0.4)} className="h-full">
-                <motion.div whileHover={{ y: -4, scale: 1.01 }} whileTap={{ scale: 0.98 }} className="h-full">
+                <motion.div
+                  whileHover={{ y: -4, scale: 1.01, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
+                  whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
+                  className="h-full"
+                >
                   <Link
                     to={to}
                     className="flex h-full flex-col items-start gap-6 rounded-2xl border border-line bg-white p-8 transition-colors hover:border-black"

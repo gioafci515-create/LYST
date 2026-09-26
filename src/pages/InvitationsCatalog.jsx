@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "../components/Reveal";
+import { EASE, DURATION, TIMING } from "../lib/motion";
 
 // Stable, non-translated category ids — order matches the "categories" arrays
 // in every locale file so filtering never depends on the displayed label.
@@ -87,10 +88,12 @@ export default function InvitationsCatalog() {
             {CATEGORY_IDS.map((categoryId, index) => {
               const isActive = categoryId === activeCategory;
               return (
-                <button
+                <motion.button
                   key={categoryId}
                   type="button"
                   onClick={() => setActiveCategory(categoryId)}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: TIMING.toggle, ease: EASE }}
                   className={`rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${
                     isActive
                       ? "border-black bg-black text-white"
@@ -98,7 +101,7 @@ export default function InvitationsCatalog() {
                   }`}
                 >
                   {categoryLabels[index]}
-                </button>
+                </motion.button>
               );
             })}
           </Reveal>
@@ -118,11 +121,24 @@ export default function InvitationsCatalog() {
                   key={template.slug}
                   layout
                   initial={{ opacity: 0, y: 24, scale: 0.96 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  whileHover={{ y: -4, scale: 1.01 }}
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ duration: 0.45, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    transition: { duration: TIMING.invitationCardHover, ease: EASE, delay: index * 0.05 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    scale: 0.95,
+                    transition: { duration: TIMING.invitationCardHover, ease: EASE },
+                  }}
+                  whileHover={{
+                    y: -4,
+                    scale: 1.01,
+                    transition: { duration: TIMING.invitationCardHover, ease: EASE },
+                  }}
+                  whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
+                  transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
                   className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-4"
                 >
                   <img

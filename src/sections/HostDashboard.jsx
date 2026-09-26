@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
+import { EASE, TIMING } from "../lib/motion";
 
 function StatusPill({ status, tone }) {
   const toneClasses =
@@ -38,8 +39,8 @@ export default function HostDashboard() {
             </div>
             <motion.button
               type="button"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.97 }}
+              whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+              whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
               className="rounded-md border border-line bg-white px-3 py-2 text-xs font-semibold text-black"
             >
               {t("hostDashboard.panel.export")}

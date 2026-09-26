@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 export default function BrandPhotos() {
   const { t } = useTranslation("about");
@@ -31,7 +32,7 @@ export default function BrandPhotos() {
                 src={photo.src}
                 alt={photo.alt}
                 whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
+                transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
                 className="h-full w-full object-cover"
               />
             </Reveal>

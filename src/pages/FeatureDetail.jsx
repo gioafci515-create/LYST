@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
+import { EASE, TIMING } from "../lib/motion";
 import ComingSoon from "./ComingSoon";
 import {
   CameraIcon,
@@ -58,9 +59,8 @@ export default function FeatureDetail() {
             <p className="max-w-[520px] text-base leading-7 text-muted">{t(`${key}.description`)}</p>
             <MotionLink
               to="/create"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              whileHover={{ scale: 1.03, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+              whileTap={{ scale: 0.96, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
               className="rounded-[10px] bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
             >
               {t("cta")}

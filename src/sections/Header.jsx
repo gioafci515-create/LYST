@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../components/LanguageSwitcher";
+import { EASE, TIMING, DURATION } from "../lib/motion";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -40,7 +41,10 @@ export default function Header() {
           <Link to="/login" className="text-sm font-semibold text-black">
             {t("login")}
           </Link>
-          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+          <motion.div
+            whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+            whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
+          >
             <Link
               to="/create"
               className="block rounded-[10px] bg-black px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
@@ -52,7 +56,7 @@ export default function Header() {
 
         <motion.button
           type="button"
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ scale: 0.9, transition: { duration: DURATION.instant, ease: EASE } }}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
@@ -60,17 +64,17 @@ export default function Header() {
         >
           <motion.span
             animate={menuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            transition={{ duration: TIMING.buttonSecondaryHover, ease: EASE }}
             className="h-0.5 w-5 rounded-full bg-black"
           />
           <motion.span
             animate={menuOpen ? { opacity: 0, x: -8 } : { opacity: 1, x: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: DURATION.instant, ease: EASE }}
             className="h-0.5 w-5 rounded-full bg-black"
           />
           <motion.span
             animate={menuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-            transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            transition={{ duration: TIMING.buttonSecondaryHover, ease: EASE }}
             className="h-0.5 w-5 rounded-full bg-black"
           />
         </motion.button>
@@ -82,7 +86,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
+            transition={{ duration: TIMING.modalOpen, ease: EASE }}
             className="absolute left-0 top-20 z-40 hidden w-full flex-col items-start gap-6 border-b border-line bg-white px-6 py-6 max-lg:flex overflow-hidden"
           >
             <nav className="flex w-full flex-col items-start gap-4">

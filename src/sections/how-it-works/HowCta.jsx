@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 const MotionLink = motion(Link);
 
@@ -22,7 +23,7 @@ export default function HowCta() {
           </div>
           <MotionLink
             to="/create"
-            whileTap={{ scale: 0.97 }}
+            whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
             className="rounded-[10px] bg-black px-8 py-4 text-[15px] font-semibold text-white transition-colors hover:bg-ink-soft"
           >
             {t("cta.button")}

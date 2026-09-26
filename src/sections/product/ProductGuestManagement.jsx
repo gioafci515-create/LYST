@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 // Tone is a visual/status token, not translatable text, so it's kept here in
 // code and matched by index to the guests list coming from the "product"
@@ -34,7 +35,7 @@ export default function ProductGuestManagement() {
 
         <Reveal
           direction="left"
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ scale: 1.02, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
           className="flex w-[733px] max-w-full flex-col gap-6 rounded-xl border border-line bg-white p-8 shadow-[0_8px_16px_rgba(0,0,0,0.02)]"
         >
           <div className="flex flex-wrap items-center justify-between gap-3">

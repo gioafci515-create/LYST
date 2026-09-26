@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
+import { EASE, DURATION, TIMING } from "../lib/motion";
 
 /* ---------------------------------------------------------------------- */
 /* Inline icons — simple Feather/Lucide-style line icons, stroke=currentColor */
@@ -232,7 +233,7 @@ function PlaceholderSection({ sectionKey, Icon, t }) {
       key={sectionKey}
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.25 }}
+      transition={{ duration: DURATION.standard, ease: EASE }}
       className="flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-xl border border-dashed border-line bg-white px-6 py-24 text-center"
     >
       <div className="flex h-14 w-14 items-center justify-center rounded-full bg-surface text-ink-soft">
@@ -389,7 +390,7 @@ export default function SuperAdmin() {
                       initial={{ opacity: 0, y: -6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -6 }}
-                      transition={{ duration: 0.15 }}
+                      transition={{ duration: TIMING.dropdownOpen, ease: EASE }}
                       className="absolute right-0 top-12 z-20 w-72 overflow-hidden rounded-xl border border-line bg-white shadow-lg"
                     >
                       <p className="border-b border-line px-4 py-3 text-xs font-bold uppercase tracking-wide text-muted-2">
@@ -420,7 +421,7 @@ export default function SuperAdmin() {
                 key="home"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.25 }}
+                transition={{ duration: DURATION.standard, ease: EASE }}
                 className="flex flex-col gap-8"
               >
                 {/* Stats row */}
@@ -468,7 +469,7 @@ export default function SuperAdmin() {
                               <motion.div
                                 initial={{ height: 0 }}
                                 animate={{ height: `${heightPct}%` }}
-                                transition={{ duration: 0.5, ease: "easeOut" }}
+                                transition={{ duration: DURATION.standard, ease: EASE }}
                                 className={`w-full rounded-md transition-colors ${
                                   isSelected ? "bg-black" : "bg-ink-soft/80 hover:bg-black"
                                 }`}
@@ -518,8 +519,8 @@ export default function SuperAdmin() {
                     <h3 className="font-display text-lg font-bold text-black">{t("table.title")}</h3>
                     <motion.button
                       type="button"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.97 }}
+                      whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+                      whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                       onClick={() => setActiveSection("orders")}
                       className="rounded-md border border-line bg-white px-3 py-2 text-xs font-semibold text-black hover:bg-surface"
                     >

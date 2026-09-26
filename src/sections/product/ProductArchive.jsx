@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 export default function ProductArchive() {
   const { t } = useTranslation("product");
@@ -22,12 +23,14 @@ export default function ProductArchive() {
           <div className="flex w-full flex-wrap items-start gap-4">
             <motion.img
               whileHover={{ scale: 1.02 }}
+              transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
               src="/images/product-gallery-1.png"
               alt={t("archive.imageAlt")}
               className="h-[340px] min-w-[240px] flex-1 rounded-lg object-cover"
             />
             <motion.img
               whileHover={{ scale: 1.02 }}
+              transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
               src="/images/product-gallery-2.png"
               alt={t("archive.imageAlt")}
               className="h-[340px] min-w-[240px] flex-1 rounded-lg object-cover"
@@ -35,6 +38,7 @@ export default function ProductArchive() {
           </div>
           <motion.div
             whileHover={{ scale: 1.02 }}
+            transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
             className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-6"
           >
             <p className="font-display text-lg font-bold text-black">{t("archive.card.title")}</p>

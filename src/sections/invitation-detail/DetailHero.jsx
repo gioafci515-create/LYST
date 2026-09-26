@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 const MotionLink = motion.create(Link);
 
@@ -77,8 +78,8 @@ export default function DetailHero({ template }) {
             <div className="flex w-full flex-wrap items-center gap-3 border-t border-line pt-6">
               <MotionLink
                 to="/create"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+                whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 className="rounded-[10px] bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
               >
                 {t("detail.ctaPrimary")}
@@ -87,8 +88,8 @@ export default function DetailHero({ template }) {
                 href={template.image}
                 target="_blank"
                 rel="noreferrer"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+                whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 className="rounded-[10px] border border-line px-6 py-3 text-sm font-semibold text-black transition-colors hover:border-black"
               >
                 {t("detail.ctaSecondary")}

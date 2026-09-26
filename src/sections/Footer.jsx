@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { SUPPORTED_LANGUAGES } from "../i18n";
+import { EASE, TIMING } from "../lib/motion";
 
 function TikTokIcon() {
   return (
@@ -110,8 +111,8 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                whileHover={{ scale: 1.08, y: -2 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.08, y: -2, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+                whileTap={{ scale: 0.95, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 className="flex size-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/40 hover:text-white"
               >
                 <Icon />

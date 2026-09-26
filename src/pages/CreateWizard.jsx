@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+import { EASE, DURATION, TIMING } from "../lib/motion";
 import Step1EventType, { isStep1Valid } from "../sections/create-wizard/Step1EventType";
 import Step2Template, { isStep2Valid } from "../sections/create-wizard/Step2Template";
 import Step3Details, { isStep3Valid } from "../sections/create-wizard/Step3Details";
@@ -181,6 +182,7 @@ export default function CreateWizard() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: DURATION.instant, ease: EASE }}
                   className="rounded-full bg-green-bg px-3 py-1 text-[9px] font-semibold uppercase tracking-wide text-green-text"
                 >
                   {t("nav.draftSaved")}
@@ -202,7 +204,7 @@ export default function CreateWizard() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
-              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: DURATION.standard, ease: EASE }}
             >
               {step === 1 && <Step1EventType {...stepProps} />}
               {step === 2 && <Step2Template {...stepProps} />}
@@ -223,8 +225,8 @@ export default function CreateWizard() {
           <div className="flex w-full max-w-[1600px] flex-wrap items-center justify-between gap-4 px-20 py-6 max-lg:px-6">
             <motion.button
               type="button"
-              whileHover={step > 1 ? { scale: 1.03 } : undefined}
-              whileTap={step > 1 ? { scale: 0.97 } : undefined}
+              whileHover={step > 1 ? { scale: 1.03, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } } : undefined}
+              whileTap={step > 1 ? { scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } } : undefined}
               onClick={handleBack}
               disabled={step === 1}
               className="rounded-lg border border-line px-6 py-3 text-sm font-semibold text-muted disabled:cursor-not-allowed disabled:opacity-50"
@@ -244,8 +246,8 @@ export default function CreateWizard() {
               {step < TOTAL_STEPS ? (
                 <motion.button
                   type="button"
-                  whileHover={canProceed ? { scale: 1.03 } : undefined}
-                  whileTap={canProceed ? { scale: 0.97 } : undefined}
+                  whileHover={canProceed ? { scale: 1.03, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } } : undefined}
+                  whileTap={canProceed ? { scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } } : undefined}
                   onClick={handleNext}
                   disabled={!canProceed}
                   className="rounded-[10px] bg-black px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft disabled:cursor-not-allowed disabled:opacity-40"
@@ -255,8 +257,8 @@ export default function CreateWizard() {
               ) : (
                 <motion.button
                   type="button"
-                  whileHover={!publishing ? { scale: 1.03 } : undefined}
-                  whileTap={!publishing ? { scale: 0.97 } : undefined}
+                  whileHover={!publishing ? { scale: 1.03, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } } : undefined}
+                  whileTap={!publishing ? { scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } } : undefined}
                   onClick={handlePublish}
                   disabled={publishing}
                   className="rounded-[10px] bg-black px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft disabled:cursor-not-allowed disabled:opacity-60"

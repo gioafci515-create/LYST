@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
 import UnderlineLink from "../components/UnderlineLink";
+import { EASE, DURATION, TIMING } from "../lib/motion";
 
 const PHOTOS = [
   "/images/Frame_254x140.png",
@@ -72,7 +73,7 @@ function PhoneMockup() {
                 initial={{ opacity: 0, scale: 1.04 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.35 }}
+                transition={{ duration: TIMING.modalOpen, ease: EASE }}
                 className="h-full w-full select-none object-cover"
                 draggable={false}
               />
@@ -85,7 +86,7 @@ function PhoneMockup() {
                 initial={{ opacity: 0, scale: 0.4 }}
                 animate={{ opacity: 1, scale: 1.15 }}
                 exit={{ opacity: 0, scale: 1.4 }}
-                transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: DURATION.instant, ease: EASE }}
                 className="pointer-events-none absolute inset-0 flex items-center justify-center drop-shadow-lg"
               >
                 <HeartIcon />
@@ -128,6 +129,7 @@ function PhoneMockup() {
           <motion.button
             type="button"
             whileTap={{ scale: 0.97 }}
+            transition={{ duration: TIMING.toggle, ease: EASE }}
             onClick={() => setRsvp("attend")}
             aria-pressed={rsvp === "attend"}
             className={`h-11 rounded-[10px] text-sm font-semibold transition-colors ${
@@ -139,6 +141,7 @@ function PhoneMockup() {
           <motion.button
             type="button"
             whileTap={{ scale: 0.97 }}
+            transition={{ duration: TIMING.toggle, ease: EASE }}
             onClick={() => setRsvp("decline")}
             aria-pressed={rsvp === "decline"}
             className={`h-11 rounded-[10px] text-sm font-semibold transition-colors ${

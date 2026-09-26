@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 export default function ProductProof() {
   const { t } = useTranslation("product");
@@ -18,9 +19,8 @@ export default function ProductProof() {
             href="https://dataketi.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.96 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            whileHover={{ scale: 1.03, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+            whileTap={{ scale: 0.96, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
             className="rounded-[10px] bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
           >
             {t("proof.cta")} →
@@ -32,7 +32,7 @@ export default function ProductProof() {
             href="https://dataketi.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ y: -4, scale: 1.01 }}
+            whileHover={{ y: -4, scale: 1.01, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
             className="block overflow-hidden rounded-2xl border border-line shadow-[0_20px_40px_rgba(0,0,0,0.08)]"
           >
             <div className="flex items-center gap-2 border-b border-line bg-surface px-4 py-3">

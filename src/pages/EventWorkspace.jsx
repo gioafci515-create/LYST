@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { BellIcon, CameraIcon, EnvelopeIcon, ShareIcon } from "../sections/features/icons";
+import { EASE, DURATION, TIMING } from "../lib/motion";
 
 /* ---------------------------------------------------------------------- */
 /* Icons — simple Feather/Lucide-style inline SVGs matching icons.jsx     */
@@ -238,7 +239,7 @@ function OverviewContent({ t, experienceState, onToggleExperience }) {
                     </span>
                     <motion.button
                       type="button"
-                      whileTap={{ scale: 0.95 }}
+                      whileTap={{ scale: 0.95, transition: { duration: TIMING.toggle, ease: EASE } }}
                       onClick={() => onToggleExperience(item.key)}
                       aria-pressed={enabled}
                     >
@@ -331,8 +332,8 @@ function PlaceholderContent({ t, sectionKey, Icon, onBack }) {
       </div>
       <motion.button
         type="button"
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.97 }}
+        whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+        whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
         onClick={onBack}
         className="rounded-lg border border-line px-4 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-surface"
       >
@@ -433,8 +434,8 @@ export default function EventWorkspace() {
               <div className="relative">
                 <motion.button
                   type="button"
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileHover={{ scale: 1.04, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+                  whileTap={{ scale: 0.95, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                   onClick={() => setNotifOpen((open) => !open)}
                   aria-label={t("topBar.notificationsLabel")}
                   aria-expanded={notifOpen}
@@ -448,7 +449,7 @@ export default function EventWorkspace() {
                       initial={{ opacity: 0, y: -6, scale: 0.98 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -6, scale: 0.98 }}
-                      transition={{ duration: 0.15 }}
+                      transition={{ duration: TIMING.dropdownOpen, ease: EASE }}
                       className="absolute right-0 top-12 z-10 w-56 rounded-lg border border-line bg-white p-4 shadow-[0_12px_32px_rgba(0,0,0,0.12)]"
                     >
                       <p className="text-xs text-muted">{t("topBar.notificationsEmpty")}</p>
@@ -459,8 +460,8 @@ export default function EventWorkspace() {
 
               <motion.button
                 type="button"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+                whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 onClick={handleShare}
                 className="flex items-center gap-2 rounded-[10px] bg-black px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
               >
@@ -470,8 +471,8 @@ export default function EventWorkspace() {
 
               <motion.button
                 type="button"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
+                whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 className="flex items-center gap-2 rounded-[10px] border border-line bg-white px-4 py-2.5 text-sm font-semibold text-black"
               >
                 <EyeIcon />
@@ -486,7 +487,7 @@ export default function EventWorkspace() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
+              transition={{ duration: DURATION.standard, ease: EASE }}
             >
               {activeSection === "overview" ? (
                 <OverviewContent t={t} experienceState={experienceState} onToggleExperience={toggleExperience} />

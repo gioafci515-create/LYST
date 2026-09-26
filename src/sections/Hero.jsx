@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Reveal from "../components/Reveal";
 import UnderlineLink from "../components/UnderlineLink";
+import { EASE, TIMING } from "../lib/motion";
 
 const MotionLink = motion(Link);
 
@@ -23,9 +24,8 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-6">
             <MotionLink
               to="/create"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.96 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              whileHover={{ scale: 1.03, transition: { duration: TIMING.buttonPrimaryHover, ease: EASE } }}
+              whileTap={{ scale: 0.96, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
               className="rounded-[10px] bg-black px-8 py-4 text-[15px] font-semibold text-white transition-colors hover:bg-ink-soft"
             >
               {t("hero.ctaPrimary")}

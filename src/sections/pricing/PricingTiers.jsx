@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { DURATION, EASE, TIMING } from "../../lib/motion";
 
 function CheckIcon({ className = "" }) {
   return (
@@ -37,8 +38,8 @@ export default function PricingTiers() {
           return (
             <Reveal key={index} direction="up" delay={index * 0.1} className="flex flex-1">
               <motion.div
-                whileHover={{ y: -4, scale: 1.01 }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={{ y: -4, scale: 1.01, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
+                whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
                 className={`relative flex flex-1 flex-col items-start gap-10 rounded-xl border p-10 max-lg:p-6 ${
                   meta.featured ? "border-[1.5px] border-black bg-surface" : "border-line bg-white"
                 }`}
@@ -73,7 +74,10 @@ export default function PricingTiers() {
                 </ul>
 
                 {meta.ctaVariant === "solid" ? (
-                  <motion.div whileTap={{ scale: 0.97 }} className="w-full">
+                  <motion.div
+                    whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
+                    className="w-full"
+                  >
                     <Link
                       to="/create"
                       className="flex h-12 w-full items-center justify-center rounded-[10px] bg-black px-6 text-sm font-semibold text-white transition-colors hover:bg-ink-soft"
@@ -82,7 +86,10 @@ export default function PricingTiers() {
                     </Link>
                   </motion.div>
                 ) : (
-                  <motion.div whileTap={{ scale: 0.97 }} className="w-full">
+                  <motion.div
+                    whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
+                    className="w-full"
+                  >
                     <a
                       href="#"
                       className="flex h-12 w-full items-center justify-center rounded-lg border border-black px-6 text-sm font-semibold text-black transition-colors hover:bg-surface"

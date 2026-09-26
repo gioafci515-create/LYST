@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "../../components/Reveal";
+import { EASE, TIMING } from "../../lib/motion";
 
 function FieldCard({ label, value, full }) {
   return (
@@ -117,7 +118,7 @@ function JourneyStep({ number, title, description, reverse, children }) {
     <Reveal
       direction={reverse ? "left" : "right"}
       delay={0.1}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.02, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
       className="flex w-[640px] max-w-full flex-col items-start gap-4"
     >
       {children}

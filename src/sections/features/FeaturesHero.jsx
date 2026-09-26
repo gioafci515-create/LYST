@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ArrowRightIcon } from "./icons";
 import Reveal from "../../components/Reveal";
+import { EASE, DURATION, TIMING } from "../../lib/motion";
 
 const CATEGORIES = [
   { letter: "A", title: "MANAGE", key: "manage", to: "/features/manage" },
@@ -33,8 +34,8 @@ export default function FeaturesHero() {
               className="flex flex-1 min-w-[280px]"
             >
               <motion.div
-                whileHover={{ y: -4, scale: 1.01 }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={{ y: -4, scale: 1.01, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
+                whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
                 className="flex w-full"
               >
                 <Link
