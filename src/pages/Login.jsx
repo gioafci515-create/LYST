@@ -89,8 +89,8 @@ export default function Login() {
                   onSubmit={handleSubmit}
                   className="flex w-[400px] max-w-full flex-col items-start gap-5"
                 >
-                  <label className="flex w-full flex-col items-start gap-2">
-                    <span className="text-[13px] font-semibold text-ink-soft">{t("emailLabel")}</span>
+                  <label className="group flex w-full flex-col items-start gap-2">
+                    <span className="text-[13px] font-semibold text-ink-soft group-focus-within:text-black">{t("emailLabel")}</span>
                     <input
                       type="email"
                       value={email}
@@ -99,16 +99,18 @@ export default function Login() {
                         if (errors.email) setErrors((prev) => ({ ...prev, email: undefined }));
                       }}
                       placeholder={t("emailPlaceholder")}
-                      className={`w-full rounded-lg border bg-surface p-4 text-sm text-black placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-black ${
-                        errors.email ? "border-red-600" : "border-line"
+                      className={`w-full rounded-lg border bg-surface p-4 text-sm text-black placeholder:text-muted transition-colors focus:outline-none ${
+                        errors.email
+                          ? "border-[1.5px] border-[#d92e2e] bg-[#fff7f7]"
+                          : "border-line hover:border-[#bfbfbd] focus:border-2 focus:border-black focus:bg-white"
                       }`}
                     />
-                    {errors.email && <span className="text-xs text-red-600">{errors.email}</span>}
+                    {errors.email && <span className="text-xs text-[#d92e2e]">{errors.email}</span>}
                   </label>
 
-                  <label className="flex w-full flex-col items-start gap-2">
+                  <label className="group flex w-full flex-col items-start gap-2">
                     <div className="flex w-full items-center justify-between">
-                      <span className="text-[13px] font-semibold text-ink-soft">{t("passwordLabel")}</span>
+                      <span className="text-[13px] font-semibold text-ink-soft group-focus-within:text-black">{t("passwordLabel")}</span>
                       <a href="#" className="text-xs text-muted hover:text-black">
                         {t("forgotPassword")}
                       </a>
@@ -121,11 +123,13 @@ export default function Login() {
                         if (errors.password) setErrors((prev) => ({ ...prev, password: undefined }));
                       }}
                       placeholder={t("passwordPlaceholder")}
-                      className={`w-full rounded-lg border bg-surface p-4 text-sm text-black placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-black ${
-                        errors.password ? "border-red-600" : "border-line"
+                      className={`w-full rounded-lg border bg-surface p-4 text-sm text-black placeholder:text-muted transition-colors focus:outline-none ${
+                        errors.password
+                          ? "border-[1.5px] border-[#d92e2e] bg-[#fff7f7]"
+                          : "border-line hover:border-[#bfbfbd] focus:border-2 focus:border-black focus:bg-white"
                       }`}
                     />
-                    {errors.password && <span className="text-xs text-red-600">{errors.password}</span>}
+                    {errors.password && <span className="text-xs text-[#d92e2e]">{errors.password}</span>}
                   </label>
 
                   <motion.button

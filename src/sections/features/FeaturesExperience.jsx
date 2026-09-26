@@ -41,7 +41,7 @@ export default function FeaturesExperience() {
                 >
                   <Link
                     to={to}
-                    className="flex h-full flex-col items-start gap-6 rounded-2xl border border-line bg-white p-8 transition-colors hover:border-black"
+                    className="flex h-full flex-col items-start gap-6 rounded-2xl border border-line bg-white p-8 transition-colors hover:border-[#c7c7c4] hover:shadow-[0_-2px_4px_rgba(0,0,0,0.04)]"
                   >
                     <div className="flex w-full items-center justify-between gap-3">
                       <h3 className="font-display text-2xl font-extrabold text-black">{card.name}</h3>

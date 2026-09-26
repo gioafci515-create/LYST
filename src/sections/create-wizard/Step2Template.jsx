@@ -90,7 +90,9 @@ export default function Step2Template({ data, updateData }) {
                 onClick={() => updateData({ template: id })}
                 aria-pressed={selected}
                 className={`flex flex-col gap-4 rounded-xl border p-3 text-left transition-colors ${
-                  selected ? "border-2 border-black" : "border-line hover:border-ink-soft"
+                  selected
+                    ? "border-2 border-black"
+                    : "border-line hover:border-[#c7c7c4] hover:shadow-[0_-2px_4px_rgba(0,0,0,0.04)]"
                 }`}
               >
                 <TemplatePreview t={t} kicker={kicker} />

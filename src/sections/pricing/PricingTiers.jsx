@@ -41,7 +41,7 @@ export default function PricingTiers() {
                 whileHover={{ y: -4, scale: 1.01, transition: { duration: TIMING.invitationCardHover, ease: EASE } }}
                 whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
                 className={`relative flex flex-1 flex-col items-start gap-10 rounded-xl border p-10 max-lg:p-6 ${
-                  meta.featured ? "border-[1.5px] border-black bg-surface" : "border-line bg-white"
+                  meta.featured ? "border-[1.5px] border-[#6b6b69] bg-surface" : "border-line bg-white"
                 }`}
               >
                 {meta.featured && (
@@ -92,7 +92,7 @@ export default function PricingTiers() {
                   >
                     <a
                       href="#"
-                      className="flex h-12 w-full items-center justify-center rounded-lg border border-black px-6 text-sm font-semibold text-black transition-colors hover:bg-surface"
+                      className="flex h-12 w-full items-center justify-center rounded-lg border border-line px-6 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
                     >
                       {tier.cta}
                     </a>

@@ -203,10 +203,10 @@ function AccountOverview() {
               exit={{ opacity: 0, y: 16, scale: 0.98 }}
               transition={{ duration: TIMING.modalOpen, ease: EASE }}
               onClick={(e) => e.stopPropagation()}
-              className="flex w-[420px] max-w-full flex-col gap-4 rounded-xl bg-white p-6"
+              className="flex w-[420px] max-w-full flex-col gap-5 rounded-xl bg-white p-8 shadow-[0_8px_24px_rgba(0,0,0,0.08)]"
             >
               <div className="flex items-start justify-between gap-4">
-                <h3 className="font-display text-lg font-bold text-black">{t("newEventModal.title")}</h3>
+                <h3 className="font-display text-xl font-semibold text-black">{t("newEventModal.title")}</h3>
                 <button
                   type="button"
                   onClick={() => setShowNewEventModal(false)}
@@ -222,7 +222,7 @@ function AccountOverview() {
                 whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
                 whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                 onClick={() => setShowNewEventModal(false)}
-                className="self-start rounded-lg border border-line px-4 py-2 text-sm font-semibold text-black hover:bg-surface"
+                className="self-start rounded-lg border border-line px-6 py-3 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
               >
                 {t("newEventModal.close")}
               </motion.button>

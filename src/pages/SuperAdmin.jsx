@@ -366,7 +366,7 @@ export default function SuperAdmin() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder={t("topbar.searchPlaceholder")}
-                  className="w-[190px] rounded-lg border border-line bg-white py-2.5 pl-9 pr-3 text-sm text-black placeholder:text-faint focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-[190px] rounded-lg border border-line bg-surface py-2.5 pl-9 pr-3 text-sm text-black placeholder:text-faint transition-colors hover:border-[#bfbfbd] focus:border-2 focus:border-black focus:bg-white focus:outline-none"
                 />
               </div>
 
@@ -522,7 +522,7 @@ export default function SuperAdmin() {
                       whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
                       whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                       onClick={() => setActiveSection("orders")}
-                      className="rounded-md border border-line bg-white px-3 py-2 text-xs font-semibold text-black hover:bg-surface"
+                      className="rounded-md border border-line bg-white px-3 py-2 text-xs font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
                     >
                       {t("table.viewAll")}
                     </motion.button>

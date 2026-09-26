@@ -24,7 +24,7 @@ export default function Step4Guests({ data, updateGuestsSettings }) {
 
       <div className="mt-6 flex flex-col gap-4">
         <SettingRow title={t("step4.maxGuests.title")} description={t("step4.maxGuests.description")}>
-          <div className="flex items-center gap-2 rounded-md border border-line bg-white px-4 py-2">
+          <div className="flex items-center gap-2 rounded-md border border-line bg-surface px-4 py-2 transition-colors hover:border-[#bfbfbd] focus-within:border-2 focus-within:border-black focus-within:bg-white">
             <input
               type="number"
               min={1}
@@ -45,7 +45,7 @@ export default function Step4Guests({ data, updateGuestsSettings }) {
             type="date"
             value={s.rsvpDeadline}
             onChange={(e) => updateGuestsSettings({ rsvpDeadline: e.target.value })}
-            className="rounded-md border border-line bg-white px-4 py-2 text-sm font-semibold text-black focus:outline-none focus:ring-2 focus:ring-black"
+            className="rounded-md border border-line bg-surface px-4 py-2 text-sm font-semibold text-black transition-colors hover:border-[#bfbfbd] focus:border-2 focus:border-black focus:bg-white focus:outline-none"
           />
         </SettingRow>
 

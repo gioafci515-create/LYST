@@ -229,7 +229,7 @@ export default function CreateWizard() {
               whileTap={step > 1 ? { scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } } : undefined}
               onClick={handleBack}
               disabled={step === 1}
-              className="rounded-lg border border-line px-6 py-3 text-sm font-semibold text-muted disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-lg border border-line px-6 py-3 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:border-line disabled:hover:bg-transparent disabled:hover:text-muted"
             >
               {t("nav.back")}
             </motion.button>

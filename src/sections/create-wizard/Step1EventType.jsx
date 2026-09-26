@@ -39,7 +39,9 @@ export default function Step1EventType({ data, updateData }) {
               onClick={() => updateData({ eventType: id })}
               aria-pressed={selected}
               className={`flex items-center gap-4 rounded-xl border p-6 text-left transition-colors ${
-                selected ? "border-2 border-black bg-white p-[23px]" : "border-line bg-surface hover:border-ink-soft"
+                selected
+                  ? "border-2 border-black bg-white p-[23px]"
+                  : "border-line bg-surface hover:border-[#c7c7c4] hover:shadow-[0_-2px_4px_rgba(0,0,0,0.04)]"
               }`}
             >
               <span

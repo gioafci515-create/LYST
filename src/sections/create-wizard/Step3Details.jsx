@@ -17,12 +17,12 @@ function Field({ label, hint, badge, badgeTone, children }) {
   return (
     <div className="flex flex-1 flex-col gap-4">
       <div className="flex flex-col gap-1.5">
-        <p className="text-[13px] font-semibold text-muted">{label}</p>
+        <p className="text-[13px] font-semibold text-ink-soft">{label}</p>
         {hint && <p className="text-[13px] text-muted-2">{hint}</p>}
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="group flex flex-col gap-2">
         <div className="flex items-center gap-2">
-          <span className="text-[13px] font-semibold text-muted">{label}</span>
+          <span className="text-[13px] font-semibold text-ink-soft group-focus-within:text-black">{label}</span>
           {badge && <Badge tone={badgeTone}>{badge}</Badge>}
         </div>
         {children}
@@ -32,7 +32,7 @@ function Field({ label, hint, badge, badgeTone, children }) {
 }
 
 const inputClass =
-  "w-full rounded-lg border border-line bg-white px-4 py-3 text-sm text-black placeholder:text-faint focus:outline-none focus:ring-2 focus:ring-black";
+  "w-full rounded-lg border border-line bg-surface px-4 py-3 text-sm text-black placeholder:text-faint transition-colors hover:border-[#bfbfbd] focus:border-2 focus:border-black focus:bg-white focus:outline-none";
 
 export default function Step3Details({ data, updateDetails }) {
   const { t } = useTranslation("createWizard");
@@ -67,12 +67,12 @@ export default function Step3Details({ data, updateDetails }) {
           </Field>
 
           <div className="flex flex-1 flex-col gap-1.5">
-            <p className="text-[13px] font-semibold text-muted">{t("step3.schedule.label")}</p>
+            <p className="text-[13px] font-semibold text-ink-soft">{t("step3.schedule.label")}</p>
             <p className="text-[13px] text-muted-2">{t("step3.schedule.hint")}</p>
             <div className="mt-2.5 flex flex-col gap-4 sm:flex-row">
-              <div className="flex flex-1 flex-col gap-2">
+              <div className="group flex flex-1 flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-[13px] font-semibold text-muted">{t("step3.date.label")}</span>
+                  <span className="text-[13px] font-semibold text-ink-soft group-focus-within:text-black">{t("step3.date.label")}</span>
                   <Badge tone="required">{t("step3.date.badge")}</Badge>
                 </div>
                 <input
@@ -82,9 +82,9 @@ export default function Step3Details({ data, updateDetails }) {
                   className={inputClass}
                 />
               </div>
-              <div className="flex flex-1 flex-col gap-2">
+              <div className="group flex flex-1 flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-[13px] font-semibold text-muted">{t("step3.time.label")}</span>
+                  <span className="text-[13px] font-semibold text-ink-soft group-focus-within:text-black">{t("step3.time.label")}</span>
                   <Badge tone="required">{t("step3.time.badge")}</Badge>
                 </div>
                 <input

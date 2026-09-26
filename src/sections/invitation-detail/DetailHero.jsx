@@ -90,7 +90,7 @@ export default function DetailHero({ template }) {
                 rel="noreferrer"
                 whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
                 whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
-                className="rounded-[10px] border border-line px-6 py-3 text-sm font-semibold text-black transition-colors hover:border-black"
+                className="rounded-[10px] border border-line px-6 py-3 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
               >
                 {t("detail.ctaSecondary")}
               </motion.a>

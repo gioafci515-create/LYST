@@ -144,7 +144,7 @@ export default function Step7Publish({ data, publishing, published, uniqueUrl })
                     whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
                     whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
                     onClick={handleCopy}
-                    className="flex shrink-0 items-center justify-center gap-2 rounded-lg border border-line bg-white px-3 py-2.5 text-sm font-semibold text-black"
+                    className="flex shrink-0 items-center justify-center gap-2 rounded-lg border border-line bg-white px-3 py-2.5 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
                   >
                     <LinkIcon />
                     {copied ? t("step7.success.copied") : t("step7.success.copy")}
@@ -169,7 +169,7 @@ export default function Step7Publish({ data, publishing, published, uniqueUrl })
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
                     whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
-                    className="flex-1 rounded-lg border border-line px-4 py-3 text-center text-sm font-semibold text-black"
+                    className="flex-1 rounded-lg border border-line px-4 py-3 text-center text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
                   >
                     {t("step7.success.open")}
                   </motion.a>
@@ -178,7 +178,7 @@ export default function Step7Publish({ data, publishing, published, uniqueUrl })
                   type="button"
                   whileHover={{ scale: 1.01, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
                   whileTap={{ scale: 0.98, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
-                  className="rounded-lg border border-line px-4 py-3 text-sm font-semibold text-black"
+                  className="rounded-lg border border-line px-4 py-3 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
                 >
                   {t("step7.success.dashboard")}
                 </motion.button>

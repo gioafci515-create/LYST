@@ -59,7 +59,7 @@ export default function MoreInvitations({ templates, currentSlug }) {
                 transition: { duration: TIMING.invitationCardHover, ease: EASE },
               }}
               whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
-              className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-4"
+              className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-4 transition-colors hover:border-[#c7c7c4] hover:shadow-[0_-2px_4px_rgba(0,0,0,0.04)]"
             >
               <img
                 src={template.image}

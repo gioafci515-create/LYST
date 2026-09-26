@@ -41,7 +41,7 @@ export default function RsvpButtons({
       <div className={`flex w-full max-w-[254px] flex-col items-start gap-2 ${className}`}>
         <div
           className={`flex h-11 w-full items-center justify-center gap-2 rounded-[10px] text-sm font-semibold ${
-            isConfirmed ? "border-[1.5px] border-green-text bg-black text-white" : "border border-line text-muted"
+            isConfirmed ? "border-[1.5px] border-[#219657] bg-black text-white" : "border border-line text-muted"
           }`}
         >
           <span>✓</span>

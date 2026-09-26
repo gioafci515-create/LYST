@@ -94,10 +94,10 @@ export default function InvitationsCatalog() {
                   onClick={() => setActiveCategory(categoryId)}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: TIMING.toggle, ease: EASE }}
-                  className={`rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors ${
+                  className={`rounded-full border px-5 py-2.5 text-sm transition-colors ${
                     isActive
-                      ? "border-black bg-black text-white"
-                      : "border-line bg-surface text-ink-soft hover:border-black"
+                      ? "border-black bg-black font-semibold text-white"
+                      : "border-line bg-surface font-medium text-muted hover:border-[#d1d1cf] hover:bg-[#ededeb] hover:text-ink-soft"
                   }`}
                 >
                   {categoryLabels[index]}
@@ -139,7 +139,7 @@ export default function InvitationsCatalog() {
                   }}
                   whileTap={{ scale: 0.98, transition: { duration: DURATION.instant, ease: EASE } }}
                   transition={{ duration: TIMING.invitationCardHover, ease: EASE }}
-                  className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-4"
+                  className="flex w-full flex-col items-start gap-4 rounded-xl border border-line bg-white p-4 transition-colors hover:border-[#c7c7c4] hover:shadow-[0_-2px_4px_rgba(0,0,0,0.04)]"
                 >
                   <img
                     src={template.image}

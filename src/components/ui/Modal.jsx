@@ -39,7 +39,7 @@ export default function Modal({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="rounded-lg border border-line px-6 py-3 text-sm font-medium text-muted transition-colors hover:border-black hover:text-black"
+                  className="rounded-lg border border-line px-6 py-3 text-sm font-medium text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
                 >
                   {cancelLabel}
                 </button>

@@ -40,7 +40,7 @@ export default function FeaturesHero() {
               >
                 <Link
                   to={category.to}
-                  className="flex h-full w-full flex-col items-start gap-4 rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-black"
+                  className="flex h-full w-full flex-col items-start gap-4 rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-[#c7c7c4] hover:shadow-[0_-2px_4px_rgba(0,0,0,0.04)]"
                 >
                   <div className="flex items-center gap-3">
                     <span className="flex size-8 items-center justify-center rounded-full bg-black text-[9px] font-semibold text-white">

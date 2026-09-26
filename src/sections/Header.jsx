@@ -1,9 +1,37 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import { EASE, TIMING, DURATION } from "../lib/motion";
+
+function NavItem({ to, label }) {
+  const { pathname } = useLocation();
+  const isActive = pathname === to || pathname.startsWith(`${to}/`);
+
+  return (
+    <Link to={to} className="flex flex-col items-center justify-center gap-1">
+      <motion.span
+        initial="rest"
+        animate={isActive ? "active" : "rest"}
+        whileHover="hover"
+        className={`text-sm ${isActive ? "font-bold text-black" : "font-bold text-muted"}`}
+      >
+        {label}
+      </motion.span>
+      <motion.span
+        variants={{
+          rest: { scaleX: 0, opacity: 0 },
+          hover: { scaleX: 1, opacity: 1 },
+          active: { scaleX: 1, opacity: 1 },
+        }}
+        transition={{ duration: TIMING.navLinkHover, ease: EASE }}
+        style={{ originX: 0.5 }}
+        className="h-[1.5px] w-full max-w-[80px] rounded-full bg-black"
+      />
+    </Link>
+  );
+}
 
 export default function Header() {
   const { t } = useTranslation();
@@ -30,9 +58,7 @@ export default function Header() {
 
         <nav className="flex flex-wrap items-center gap-10 max-lg:hidden">
           {navLinks.map(({ label, to }) => (
-            <Link key={to} to={to} className="text-sm font-bold text-muted transition-colors hover:text-black">
-              {label}
-            </Link>
+            <NavItem key={to} to={to} label={label} />
           ))}
         </nav>
 

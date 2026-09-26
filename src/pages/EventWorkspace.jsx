@@ -335,7 +335,7 @@ function PlaceholderContent({ t, sectionKey, Icon, onBack }) {
         whileHover={{ scale: 1.02, transition: { duration: TIMING.buttonSecondaryHover, ease: EASE } }}
         whileTap={{ scale: 0.97, transition: { duration: TIMING.buttonPrimaryPressed, ease: EASE } }}
         onClick={onBack}
-        className="rounded-lg border border-line px-4 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-surface"
+        className="rounded-lg border border-line px-4 py-2.5 text-sm font-semibold text-muted transition-colors hover:border-black hover:bg-black hover:text-white"
       >
         {t("placeholders.backToOverview")}
       </motion.button>

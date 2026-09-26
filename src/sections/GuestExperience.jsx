@@ -132,8 +132,8 @@ function PhoneMockup() {
             transition={{ duration: TIMING.toggle, ease: EASE }}
             onClick={() => setRsvp("attend")}
             aria-pressed={rsvp === "attend"}
-            className={`h-11 rounded-[10px] text-sm font-semibold transition-colors ${
-              rsvp === "attend" ? "bg-black text-white" : "border border-line text-muted"
+            className={`h-11 rounded-[10px] bg-black text-sm font-semibold text-white transition-colors hover:bg-ink-soft ${
+              rsvp === "attend" ? "border-[1.5px] border-[#219657]" : ""
             }`}
           >
             {t("guestExperience.mockup.attend")}
@@ -144,8 +144,8 @@ function PhoneMockup() {
             transition={{ duration: TIMING.toggle, ease: EASE }}
             onClick={() => setRsvp("decline")}
             aria-pressed={rsvp === "decline"}
-            className={`h-11 rounded-[10px] text-sm font-semibold transition-colors ${
-              rsvp === "decline" ? "bg-black text-white" : "border border-line text-muted font-medium"
+            className={`h-11 rounded-[10px] border border-line text-sm font-medium text-muted transition-colors ${
+              rsvp === "attend" ? "opacity-50" : "hover:border-black hover:bg-black hover:text-white"
             }`}
           >
             {t("guestExperience.mockup.decline")}
