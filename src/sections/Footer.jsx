@@ -32,7 +32,7 @@ const SOCIALS = [
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
-  const columns = ["product", "features", "invitations", "experiences", "about"].map((key) => ({
+  const columns = ["product", "features", "invitations", "about"].map((key) => ({
     key,
     title: t(`footer.columns.${key}.title`),
     items: t(`footer.columns.${key}.items`, { returnObjects: true }),

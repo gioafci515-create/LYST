@@ -14,17 +14,13 @@
   "footer": {
     "tagline": "Invite smarter.",
     "columns": {
-      "product": { "title": "Product", "items": ["Event space", "Letters", "Archive"] },
-      "features": { "title": "Features", "items": ["Photo challenges", "Custom domain", "Shared gallery"] },
+      "product": { "title": "Product", "items": ["Event space", "Letters", "Time capsule", "Archive"] },
+      "features": { "title": "Invitations", "items": ["Photo challenges", "Custom domain", "Shared gallery"] },
       "invitations": {
-        "title": "Digital invitations",
+        "title": "Experiences",
         "items": ["Digital styling", "Interactive experiences", "Custom URL", "Shared gallery"]
       },
-      "experiences": {
-        "title": "Experiences",
-        "items": ["Event Camera", "Disposable Camera Mode", "Voice Guestbook"]
-      },
-      "about": { "title": "About us", "items": ["Our story", "List", "Contact", "Careers"] }
+      "about": { "title": "About us", "items": ["Our story", "Studio Tbilisi", "Contact"] }
     },
     "quickLinks": { "title": "Quick links" },
     "language": "Language",
